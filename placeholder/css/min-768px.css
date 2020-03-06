@@ -1,0 +1,55 @@
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .center-half {
+    width: 65vw;
+  }
+
+  .logo {
+  	width: 50%;
+  }
+
+  .buttons {
+  	flex-direction: row;
+    padding: 10px 30px;
+  }
+
+  .text, .button {
+  	font-size: 1.1rem;
+  	line-height: 1.3rem;
+  }
+  .description {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .center-half {
+    width: 55vw;
+  }
+
+  .logo {
+  	width: 45%;
+  }
+
+  .buttons {
+  	flex-direction: row;
+    padding: 10px 30px;
+  }
+
+  .text, .button {
+  	font-size: 1.5em;
+  	line-height: 1.3em;
+  }
+  .description {
+    width: 60%;
+  }
+
+  .text-small {
+    font-size: 1.3em;
+  	line-height: 1.3em;
+  }
+
+  .title {
+    font-size: 2em;
+  	line-height: 2.1em;
+  }
+}

@@ -2,21 +2,27 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>MIDImonster: Impressum</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/main-and-mobile.css">
+		<link rel="stylesheet" media="(min-device-width: 375px) and (max-device-width: 768px)" href="css/min-375px-max-768px.css">
+		<link rel="stylesheet" media="(min-device-width: 768px)" href="css/min-768px.css">
 	</head>
 	<body>
-		<div class="container impressum">
-			<header>
-				<a href="index.html">
-					<h1 class="title">
-						<span class="capitals_white">midi</span><span class="title-highlight_green">monster</span>
-					</h1>
-				</a>
-				<div class="logo">
-					<a href="index.html"><img src="assets/MIDImonster-logo.svg" alt="MIDImonster logo"></a>
-				</div>
-			</header>
+
+		<header class="center-half flex-horizonthal flex-reverse">
+			<a href="index.html">
+				<h1 class="title">
+					<span class="capitals_white">midi</span><span class="title-highlight_green">monster</span>
+				</h1>
+			</a>
+			<div class="logo">
+				<a href="index.html"><img src="assets/MIDImonster-logo.svg" alt="MIDImonster logo"></a>
+			</div>
+		</header>
+
+
+		<main class="center-half">
 			<h2 class="heading">Impressum</h2>
 			<div class="text-aligh-left-50vw">
 				<p>Angaben gemäß § 5 TMG</p>
@@ -26,9 +32,11 @@
 					76137 Karlsruhe
 				</p>
 			</div>
-		</div>
+		</main>
+
+
 		<footer>
-			<a href="impressum.html" class="button_inline text-highlight_green">Impressum</a>
+			<a href="impressum.html" class="button_inline text-small text-highlight_green ">Impressum</a>
 		</footer>
 	</body>
 </html>
