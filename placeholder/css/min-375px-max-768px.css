@@ -16,9 +16,17 @@
   	font-size: 1.1rem;
   	line-height: 1.2rem;
   }
+
+  .text-aligh-left-50vw {
+  	width: 80%; /* tablet */
+  }
+
+  .flex-horizonthal-reverse .logo {
+  	width:20%;
+  }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 700px) {
   .center-half {
     width: 60vw;
   }
@@ -35,5 +43,11 @@
   .text, .button {
   	font-size: 1.1rem;
   	line-height: 1.2rem;
+  }
+  .text-aligh-left-50vw {
+    width: 60%; /* tablet */
+  }
+  .flex-horizonthal-reverse .logo {
+    width:20%;
   }
 }

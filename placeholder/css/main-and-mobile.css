@@ -33,17 +33,19 @@ body {
 	align-items:center;
 	flex-direction: row-reverse;
 	justify-content: center;
+	margin: 15px auto 0 auto !important;
 }
 
 .flex-horizonthal {
 	display: flex;
 	align-items:center;
 	flex-direction: row;
+	margin: 15px auto 0 auto !important;
 }
 
 
 .flex-horizonthal-reverse .logo {
-	width:10%;
+	width:50%;
 	margin: 0 20px 0 0;
 }
 
@@ -152,7 +154,7 @@ span.space {
 }
 
 .text-aligh-left-50vw {
-	width: 50vw;
+	width: 100%; /* mobile */
 	text-align: left;
 }
 
@@ -160,6 +162,7 @@ span.space {
 	width: 80vw;
 	margin: 0 auto;
 }
+
 
 /* =========================== */
 /* ========= FONTS =========== */
@@ -217,8 +220,8 @@ p{
 	font-family: 'Open Sans', Arial;
 	text-decoration: none;
 	box-shadow: none;
-	font-size: 1.7rem;
-	line-height: 1.8rem;
+	font-size: 1.5rem;
+	line-height: 1.6rem;
 }
 
 h3 {
@@ -287,8 +290,8 @@ h3 {
   letter-spacing: 0px;
   color: rgba(255, 255, 255, 1);
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
-  font-size: 2rem;
-  line-height: 2.1rem;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
   font-weight: 700;
   font-style: normal;
   font-family: 'Open Sans', Arial;
