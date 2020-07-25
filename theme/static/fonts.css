@@ -1,0 +1,433 @@
+/*====== Gangster Grotesk ========*/
+@font-face {
+  font-family: "GangsterGrotesk Bold";
+  src: url("fonts/Gangster Grotesk/gangstergrotesk-bold.woff");
+}
+
+@font-face {
+  font-family: "GangsterGrotesk Regular";
+  src: url("fonts/Gangster Grotesk/gangstergrotesk-regular.woff");
+}
+
+@font-face {
+  font-family: "GangsterGrotesk Light";
+  src: url("fonts/Gangster Grotesk/gangstergrotesk-light.woff");
+}
+
+/*====== Open Sans ========*/
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/Open Sans/OpenSans-Regular.ttf");
+}
+
+
+/*====================
+======= ICONS =======
+=====================*/
+.icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: 1500% 100%;
+  transition: all 0.2s;
+}
+
+.ico-github {
+  background: url(icons/github_icon.svg) 0 0 no-repeat;
+}
+
+.ico-irc {
+  background: url(icons/irc_icon.svg) 0 0 no-repeat;
+}
+
+.ico-email {
+  background: url(icons/mail_icon.svg) 0 0 no-repeat;
+}
+
+
+
+/* ============================= */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1{
+    font-family: "GangsterGrotesk Regular";
+    font-weight: bold;
+    font-size: 3.2rem; /* 48px */
+    /*line-height: 3rem;*/
+    color: #23cb97;
+    margin: 0;
+    position: relative;
+}
+body div h1:first-child{
+  padding-bottom:1rem;
+  margin-bottom:1rem;
+}
+
+header + div h1::after{
+  content: '';
+  background-color: #23cb97;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.1em;
+  width: 6rem;
+  margin: 0 auto;
+  border-top: 1px solid black;
+}
+
+.font-primary_color {
+  color: #23cb97;
+}
+
+header h1 {
+    font-size: 1.5rem; /* 48px */
+}
+
+h2 {
+    font-family: "GangsterGrotesk Bold";
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #fff;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+h3 {
+    font-family: "GangsterGrotesk Bold";
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    color: #23cb97;
+    margin: 0;
+}
+
+h4 {
+  font-weight: 800;
+}
+
+p, a, h4, label {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 0;
+    padding: 0 0 0.5rem 0;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+
+p {
+  color: #bbbec1;
+}
+
+.content a, .nav a, .nav-sidebar a, .footer-line a, .inline-link a {
+  color: #23cb97;
+  position: relative;
+  width:fit-content;
+}
+
+.content a:hover, .nav a:hover, .nav-sidebar a:hover, .footer-line a:hover, .inline-link a:hover {
+  font-weight: 800;
+  color:  #23cb97;
+}
+
+.content a::before, .nav a::before, .nav-sidebar a::before, .inline-link a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #23cb97;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content a:hover::before, .nav a:hover::before, .nav-sidebar a:hover::before, .inline-link a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.font-white {
+    color: #FFF;
+}
+
+.font-primary-color {
+    color: #23CB97;
+}
+
+header li, footer a {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.1rem !important;
+    line-height: 1.3rem !important;
+    text-align: left;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header li a:hover,
+header .menu-btn:hover {
+  color: #fff;
+}
+
+footer .socials a{
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border: none !important;
+  margin: 0 1em;
+  position: relative;
+  transform: scale(1);
+  transition: all 0.33s !important;
+  vertical-align: top;
+}
+
+
+header li a, footer a{
+    color: #cecdcd;
+}
+
+
+header li.active a{
+    color: #23cb97;
+    font-weight:600;
+}
+
+
+@media (min-width: 48em) {
+  header li:last-child {
+    margin-right:0;
+  }
+  header li, footer a {
+    font-size: 0.9rem !important;
+    line-height: 1.1rem !important;
+  }
+}
+
+.modules .module-card h3{
+    text-align: center;
+}
+
+.modules .module-card p, .modules .module-card a{
+    font-size: 0.8rem;
+}
+
+.extra {
+    color: rgba(187, 190, 193, 0.66);
+}
+
+#download h1 {
+  display: none;
+}
+
+.download-box .download-os {
+  color: #23cb97;
+  font-weight: bold;
+  font-family: "GangsterGrotesk Bold";
+}
+
+.download-box .button a{
+  font-size: 0.8rem !important;
+}
+
+.one-list-item::before {
+  content: '';
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 0.3rem;
+  background-color: #23cb97;
+  display: block;
+  position: relative;
+  left: -1rem;
+  top: 1rem;
+}
+
+footer span {
+  font-family: "GangsterGrotesk Bold";
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  text-align: left;
+  color: #23cb97;
+  margin: 0;
+  display: inline-block;
+  margin: 0 3rem 0 0;
+}
+
+
+[class^="navPoint"]{
+  color: #bbbec1;
+}
+
+.list-styling ul, .list-styling ol {
+  padding-inline-start: 1rem;
+}
+.list-styling ul li {
+  margin-bottom: 0.5rem;
+}
+
+.list-styling ul li p::before {
+  content: "\2022";
+  color:  #23cb97;
+  font-weight: bold;
+  display: block;
+  width: 1em;
+  position: absolute;
+  margin-left: -1rem;
+}
+
+.list-styling ul li p, .list-styling ol li p {
+  padding: 0 0 0.4rem;
+  margin-left: 1rem;
+}
+.list-styling ul li:last-child p, .list-styling ol li:last-child p {
+  padding: 0 0 0.7rem;
+
+}
+
+.list-styling ul li:first-child p, .list-styling ol li:first-child p {
+  padding: 0.7rem 0 0.4rem;
+}
+
+.list-styling ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+
+.list-styling ol li {
+  counter-increment: my-awesome-counter;
+}
+.list-styling ol li p::before {
+  content: counter(my-awesome-counter) ".  ";
+  color: #23cb97;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  margin-left: -1rem;
+}
+
+
+/*====================
+======= TABLET =======
+=====================*/
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.5rem; 
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  p, a {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  h1 + p, h2 + p, h3 + p {
+    max-width:500px;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    padding: 0;
+  }
+
+  .text-styling h1 + p, .text-styling h2 + p, .text-styling h3 + p {
+    max-width:none;
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    padding: 0;
+  }
+
+  .modules .module-card p, .modules .module-card a{
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+  header li .nav_point {
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 0.3rem;
+    background-color:#cecdcd;
+    position: relative;
+    display: none;
+  }
+    header li.active .nav_point{
+      background: #23cb97;
+      display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3.7rem;
+  }
+
+  header + div h1::after{
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3rem; 
+  }
+
+  h3 {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
+
+  p, a {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+
+
+
+  h1 + p, h2 + p, h3 + p {
+    max-width:600px;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .modules .module-card p, .modules .module-card a{
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+}
+
+.code, .highlight {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.highlight .gp {
+  color: #23cb97;
+}
