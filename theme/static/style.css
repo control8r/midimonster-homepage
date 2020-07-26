@@ -586,7 +586,7 @@ ul {
 }
 
 .info-button:after {
-  content: url(img/icons/arrow-right.svg);
+  content: url(../../site/assets/icons/arrow-right.svg);
   display: inline-block;
   width: 0.8rem;
   height: 0.8rem;
@@ -597,7 +597,7 @@ ul {
 }
 
 .arrow-right {
-  background: url(img/icons/arrow-right.svg) no-repeat top left;
+  background: url(../../site/assets/icons/arrow-right.svg) no-repeat top left;
   display:inline-block;
   width: 1.1rem;
   height: 1.1rem;
