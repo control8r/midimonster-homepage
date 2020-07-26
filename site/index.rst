@@ -1,8 +1,8 @@
-.. container:: flex flex-mobile-algn-vert-reverse flex-tablet-desktop-algn-horiz bg-primary hero section 
+.. container:: flex-mobile-algn-vert-reverse flex-tablet-desktop-algn-horiz bg-primary hero section 
 
-	.. container:: flex flex-mobile-algn-vert-reverse flex-tablet-desktop-algn-horiz  main-container-wide-xl
+	.. container:: flex-mobile-algn-vert-reverse flex-tablet-desktop-algn-horiz  main-container-wide-xl
 
-		.. container:: flex flex-mobile-algn-vert mobile-centered 
+		.. container:: flex-mobile-algn-vert mobile-centered 
 
 			.. raw:: html
 
@@ -10,7 +10,7 @@
 
 			The MIDIMonster is an universal control and translation tool for most show control protocols in the entertainment industry - and lots more besides
 
-			.. container:: flex flex-mobile-algn-vert flex-tablet-desktop-algn-horiz buttons-container
+			.. container:: flex-mobile-algn-vert flex-tablet-desktop-algn-horiz buttons-container
 
 				.. rst-class:: button button-secondary
 				`Download </download>`_
@@ -21,7 +21,7 @@
 		.. rst-class:: hero-img
 		.. image:: assets/illustrations/Midimonster_with_Devices.svg
 
-.. container:: flex flex-desktop-algn-vert flex-mobile-algn-vert bg-secondary centered section breathing-vertical
+.. container:: flex-desktop-algn-vert flex-mobile-algn-vert bg-secondary centered section breathing-vertical
 
 	.. raw:: html
 
@@ -42,7 +42,7 @@
 		.. include:: backends/input_card.rst
 		.. include:: backends/jack_card.rst
 
-.. container:: flex flex-mobile-algn-vert bg-primary centered section
+.. container:: flex-mobile-algn-vert bg-primary centered section
 
 	.. raw:: html
 
@@ -60,22 +60,22 @@
 		.. include:: backends/python_card.rst
 		.. include:: backends/loopback_card.rst
 
-.. container:: flex flex-mobile-algn-vert flex-tablet-desktop-algn-horiz bg-secondary centered section
+.. container:: flex-mobile-algn-vert flex-tablet-desktop-algn-horiz bg-secondary centered section
 
-	.. container:: flex flex-mobile-algn-vert-reverse flex-tablet-desktop-algn-horiz mobile-centered vertical-algn-center space-between-container  breathing-vertical main-container-wide-xl
+	.. container:: flex-mobile-algn-vert-reverse flex-tablet-desktop-algn-horiz mobile-centered vertical-algn-center space-between-container  breathing-vertical main-container-wide-xl
 		
-		.. container:: flex flex-mobile-algn-vert mobile-centered width-desktop-40-percent desktop-algn-left
+		.. container:: flex-mobile-algn-vert mobile-centered width-desktop-40-percent desktop-algn-left
 
 			.. raw:: html
 
 				<h2>Expressive and easy-to-learn configuration syntax</h2>
 
-			.. container:: flex flex-mobile-algn-vert mobile-centered no-padding-on-sides
+			.. container:: flex-mobile-algn-vert mobile-centered no-padding-on-sides
 
 				Browse our library of example configurations and user contributed use-case
 				descriptions to get a feeling of what is possible.
 
-			.. container:: flex flex-mobile-algn-vert flex-tablet-desktop-algn-horiz buttons-container
+			.. container:: flex-mobile-algn-vert flex-tablet-desktop-algn-horiz buttons-container
 
 				.. rst-class:: button button-primary
 				`Example configurations </getting-started#example-configs>`_
@@ -85,23 +85,23 @@
 			.. image:: assets/illustrations/Puzzle_configuration.svg
 
 
-.. container:: flex flex-mobile-algn-vert flex-tablet-desktop-algn-vert bg-primary centered section
+.. container:: flex-mobile-algn-vert flex-tablet-desktop-algn-vert bg-primary centered section
 
-	.. container:: flex flex-mobile-algn-vert flex-tablet-desktop-algn-horiz mobile-centered vertical-algn-center space-between-container breathing-vertical
+	.. container:: flex-mobile-algn-vert flex-tablet-desktop-algn-horiz mobile-centered vertical-algn-center space-between-container breathing-vertical
 		
 		.. container:: img-container img-container-medium width-desktop-40-percent
 
 			.. image:: assets/illustrations/Collaboration.svg
 
-		.. container:: flex flex-mobile-algn-vert flex-tablet-desktop-algn-vert mobile-centered width-desktop-40-percent
+		.. container:: flex-mobile-algn-vert flex-tablet-desktop-algn-vert mobile-centered width-desktop-40-percent
 
-			.. container:: flex flex-mobile-algn-vert mobile-centered desktop-algn-left 
+			.. container:: flex-mobile-algn-vert mobile-centered desktop-algn-left 
 				
 				.. raw:: html
 
 					<h2>Dedicated and helpful community</h2>
 
-				.. container:: flex flex-mobile-algn-vert mobile-centered no-padding-on-sides inline-links breathing-vertical
+				.. container:: flex-mobile-algn-vert mobile-centered no-padding-on-sides inline-links breathing-vertical
 
 					Do you have questions, ideas for new features or backends, issues you would
 					like to bring up or did you find a bug? We're happy to hear from you, both
@@ -111,7 +111,7 @@
 					project realized with the MIDIMonster? The Knowledge base is the place to
 					share your insights with other users!
 
-				.. container:: flex flex-mobile-algn-vert flex-tablet-desktop-algn-horiz buttons-container
+				.. container:: flex-mobile-algn-vert flex-tablet-desktop-algn-horiz buttons-container
 
 					.. rst-class:: button button-secondary
 					`Knowledge Base <https://kb.midimonster.net/use-cases>`_
@@ -126,7 +126,7 @@
 
 		You like MIDIMonster project and want to contribute? Sounds great, here youi can find all the information on how you can help in developing this open source project
 	
-		.. container:: flex flex-mobile-algn-vert centered
+		.. container:: flex-mobile-algn-vert centered
 
 			.. rst-class:: button button-secondary
 			`How to contribute <https://kb.midimonster.net/use-cases>`_
