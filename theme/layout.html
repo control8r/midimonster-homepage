@@ -20,7 +20,7 @@
 {%- set url_root = pathto('', 1) %}
 {# XXX necessary? #}
 {%- if url_root == '#' %}{% set url_root = '' %}{% endif %}
-{%- if not embedded and docstitle %}
+{%- if not embedded and docs %}
   {%- set titlesuffix = " &#8212; "|safe + docstitle|e %}
 {%- else %}
   {%- set titlesuffix = "" %}
