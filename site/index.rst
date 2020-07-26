@@ -71,9 +71,8 @@
 				<h2>Expressive and easy-to-learn configuration syntax</h2>
 
 			.. container:: flex-mobile-algn-vert mobile-centered no-padding-on-sides
-
-				Browse our library of example configurations and user contributed use-case
-				descriptions to get a feeling of what is possible.
+			
+				Browse our library of example configurations and user contributed use-case descriptions to get a feeling of what is possible.
 
 			.. container:: flex-mobile-algn-vert flex-tablet-desktop-algn-horiz buttons-container
 
