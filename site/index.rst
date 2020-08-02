@@ -123,8 +123,8 @@
 
 			<h2>Contribute</h1>
 
-		You like MIDIMonster project and want to contribute? Sounds great! We have gathered all the information on how you can help in developing this open source project
-	
+		You like the MIDIMonster project and want to contribute? Sounds great! We have gathered all the information on how you can help in developing this open source project
+
 		.. container:: flex-mobile-algn-vert centered
 
 			.. rst-class:: button button-secondary

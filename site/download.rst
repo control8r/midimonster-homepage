@@ -54,7 +54,7 @@ Download
 					The Lua backend now supports routing all channel events to a single function using the default-handler functionality...
 
 			.. rst-class:: inline-link
-			`Read more on GitHub page <https://github.com/cbdevnet/midimonster/releases/tag/v0.5>`_
+			`Read more on the GitHub release page <https://github.com/cbdevnet/midimonster/releases/tag/v0.5>`_
 
 		.. container:: flex flex-mobile-algn-vert flex-tablet-desktop-algn-horiz flex-wrapped sticky
 
@@ -63,78 +63,52 @@ Download
 				.. container:: flex flex-horizonthal
 
 					.. rst-class:: download-os
-					Debian Linux
+					Debian Linux (amd64)
 
 					.. rst-class:: extra
 					.deb
 
 				.. rst-class:: button button-secondary
-				`download <https://www.google.com>`_
+				`download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster_0.5-1_amd64.deb>`_
 
 			.. container:: download-box
 
 					.. container:: flex flex-horizonthal
 
 						.. rst-class:: download-os
-						Linux
+						Linux (x64 ELF)
 
 						.. rst-class:: extra
 						.tgz
 
 					.. rst-class:: button button-secondary
-					`download <https://www.google.com>`_
+					`download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster-v0.5-linux.tgz>`_
 
 			.. container:: download-box
 
 				.. container:: flex flex-horizonthal
 
 					.. rst-class:: download-os
-					OS X
+					OS X (Mach-O)
 
 					.. rst-class:: extra
 					.tgz
 
 				.. rst-class:: button button-secondary
-				`download <https://www.google.com>`_
+				`download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster-v0.5-osx.tgz>`_
 
 			.. container:: download-box
 
 				.. container:: flex flex-horizonthal
 
 					.. rst-class:: download-os
-					Windows
+					Windows (x64 PE)
 
 					.. rst-class:: extra
 					.zip
 
 				.. rst-class:: button button-secondary
-				`download <https://www.google.com>`_
-
-			.. container:: download-box
-
-					.. container:: flex flex-horizonthal
-
-						.. rst-class:: download-os
-						AMD 64
-
-						.. rst-class:: extra
-						.deb
-
-					.. rst-class:: button button-secondary
-					`download <https://www.google.com>`_
-
-			.. container:: download-box source-code
-
-				.. container:: flex flex-horizonthal
-
-					.. rst-class:: download-os
-					Source code
-
-					.. rst-class:: extra
-					.zip
-
-				.. rst-class:: button button-secondary
-				`download <https://www.google.com>`_
+				`download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster-v0.5-windows.zip>`_
 
 			.. container:: download-box source-code
 
@@ -147,7 +121,7 @@ Download
 					.tar.gz
 
 				.. rst-class:: button button-secondary
-				`download <https://www.google.com>`_
+				`download <https://github.com/cbdevnet/midimonster/archive/v0.5.zip>`_
 
 	.. container:: on-the-bottom
 
@@ -160,7 +134,7 @@ Download
 
 		<h2>Next steps</h2>
 
-	For more information how to configure and details you can find over here
+	For more information how to configure and use, see
 
 	.. container:: flex-mobile-algn-vert flex-tablet-desktop-algn-horiz centered flex-with-line-between
 
