@@ -30,15 +30,15 @@
 }
 
 .ico-github {
-  background: url(../../site/assets/icons/github_icon.svg) 0 0 no-repeat;
+  background: url(_static/icons/github_icon.svg) 0 0 no-repeat;
 }
 
 .ico-irc {
-  background: url(../../site/assets/icons/irc_icon.svg) 0 0 no-repeat;
+  background: url(_static/icons/irc_icon.svg) 0 0 no-repeat;
 }
 
 .ico-email {
-  background: url(../../site/assets/icons/mail_icon.svg) 0 0 no-repeat;
+  background: url(_static/icons/mail_icon.svg) 0 0 no-repeat;
 }
 
 
