@@ -486,12 +486,6 @@ footer {
   padding-top: 3.5rem !important;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 @media (min-width: 640px) {
 
   .flex-tablet-desktop-algn-horiz {
@@ -841,12 +835,9 @@ input {
   margin: 0 auto;
 }
 
-.one-list-item {
-  margin: 0 0 1rem 1rem;
-}
-
-.one-list-item p {
-  display: inline;
+li {
+	margin: 0 0 1rem 1rem;
+	font-weight: 1pt;
 }
 
 .download-box {
@@ -890,16 +881,12 @@ input {
   background-color: #000;
 }
 
-.one-list-item::before {
-    content: "";
-    font-size: larger;
-    color: red;
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 0.5rem;
-    background-color:#cecdcd;
-    position: relative;
-    bottom: -0.5rem;
+div.listing li {
+	margin-left: 2rem;
+}
+
+div.listing p {
+	color: white;
 }
 
 @media (min-width: 640px) {

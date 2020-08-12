@@ -39,19 +39,19 @@
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
       <ul class="menu bg-secondary">
-        <li class="{{ 'active' if pagename == 'index' }}">
+        <li class="{{ 'active' if pagename == 'index' }} mm-item">
             <a href="index.html" title="Home" accesskey="I">Home</a>
             <div class="nav_point"></div>
         </li>
-        <li class="{{ 'active' if pagename == 'getStarted' }}">
-            <a href="getStarted.html">Get started</a>
-            <div class="nav_point"></div>
-        </li>
-        <li class="{{ 'active' if pagename == 'download' }}">
+        <li class="{{ 'active' if pagename == 'download' }} mm-item">
             <a href="download.html">Download</a>
             <div class="nav_point"></div>
         </li>
-        <li class="{{ 'active' if pagename == 'knowledgeBase' }}">
+        <li class="{{ 'active' if pagename == 'getStarted' }} mm-item">
+            <a href="getStarted.html">Get started</a>
+            <div class="nav_point"></div>
+        </li>
+        <li class="{{ 'active' if pagename == 'knowledgeBase' }} mm-item">
             <a href="https://kb.midimonster.net/index.html" target="_blank">Knowledge Base</a>
             <div class="nav_point"></div>
         </li>

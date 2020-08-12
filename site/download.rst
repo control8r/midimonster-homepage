@@ -4,7 +4,8 @@ Download
 .. container:: flex flex-mobile-algn-vert flex-tablet-desktop-algn-vert section main-container
 
 	.. rst-class:: no-margin
-	Latest stable release
+	Get the latest binary release builds here or try our `Linux installer <#using-the-linux-installer>`_.
+	Of course, you can always `build the source yourself <#building>`_.
 
 	.. raw:: html
 
@@ -12,46 +13,15 @@ Download
 
 	.. container:: flex flex-mobile-algn-vert flex-tablet-desktop-algn-horiz line-on-the-top
 
-		.. container:: flex flex-mobile-algn-vert flex-tablet-desktop-algn-vert w-1-2 no-margin
+		.. container:: flex flex-mobile-algn-vert flex-tablet-desktop-algn-vert w-1-2 no-margin listing
 
-			.. raw:: html
+			Release info
 
-				<h4>Release info</h4>
-
-			.. container:: one-list-item
-
-					.. rst-class:: font-primary-color
-					RTP:
-
-					New RTP MIDI backend, which allows users to interact with a wide variety of devices communicating MIDI over the network.
-
-			.. container:: one-list-item
-
-					.. rst-class:: font-primary-color
-					ALSA:
-
-					The ALSA MIDI backend has removed support for the deprecated early channel specification syntax.
-
-			.. container:: one-list-item
-
-					.. rst-class:: font-primary-color
-					OSC:
-
-					The OSC backend has been extended to allow reception of OSC bundle data.
-
-			.. container:: one-list-item
-
-					.. rst-class:: font-primary-color
-					maweb:
-
-					The maweb backend now supports specifying multiple fallback remote addresses and will periodically try to reconnect to any of them when a connection fails.
-
-			.. container:: one-list-item
-
-					.. rst-class:: font-primary-color
-					Lua:
-
-					The Lua backend now supports routing all channel events to a single function using the default-handler functionality...
+			- **RTP:** New RTP MIDI backend, which allows users to interact with a wide variety of devices communicating MIDI over the network.
+			- **ALSA:** The ALSA MIDI backend has removed support for the deprecated early channel specification syntax.
+			- **OSC:** The OSC backend has been extended to allow reception of OSC bundle data.
+			- **maweb:** The maweb backend now supports specifying multiple fallback remote addresses and will periodically try to reconnect to any of them when a connection fails.
+			- **Lua:** The Lua backend now supports routing all channel events to a single function using the default-handler functionality...
 
 			.. rst-class:: inline-link
 			`Read more on the GitHub release page <https://github.com/cbdevnet/midimonster/releases/tag/v0.5>`_
@@ -128,28 +98,49 @@ Download
 			.. rst-class:: button info-button
 			`Older releases <https://github.com/cbdevnet/midimonster/releases>`_
 
+Using the Linux installer
+#########################
+
+If you're running a Linux system and want to either build the latest version, or want to run the MIDIMonster on
+an architecture that is not available for the binary downloads, the following commands download the installer,
+make it executable and finally, start it::
+
+    wget https://raw.githubusercontent.com/cbdevnet/midimonster/master/installer.sh ./
+    chmod +x ./installer.sh
+    ./installer.sh
+
+The installer can also be used for automating installations or upgrades by specifying additional command line arguments.
+To see a list of valid arguments, run the installer with the --help argument.
+
+The installer script can also update MIDIMonster to the latest version automatically, using a configuration file generated
+during the installation. To do so, run ::
+
+    #> midimonster-updater
+
+as root on your system after using the installer.
+
 .. container:: flex-mobile-algn-vert flex-tablet-desktop-algn-vert bg-secondary centered section
 
 	.. raw:: html
 
 		<h2>Next steps</h2>
 
-	For more information how to configure and use, see
+	We've collected some resources to help you get your feet on the ground with the MIDIMonster
 
 	.. container:: flex-mobile-algn-vert flex-tablet-desktop-algn-horiz centered flex-with-line-between
 
 		.. container:: flex-mobile-algn-vert flex-tablet-desktop-algn-vert
 
-			First steps, how to install and configure an example
+			Learn how to write your first configuration
 
 			.. rst-class:: button button-primary
-			`How to install <getStarted.html>`_
+			`Get started <getStarted.html>`_
 
 
 
 		.. container:: flex-mobile-algn-vert flex-tablet-desktop-algn-vert
 
-			Development info, scripts, configuration examples
+			See what other people have built and profit from their experience
 
 			.. rst-class:: button button-secondary
 			`Knowledge base <https://kb.midimonster.net/index.html>`_

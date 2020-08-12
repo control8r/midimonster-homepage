@@ -76,7 +76,7 @@ header + div h1::after{
   border-top: 1px solid black;
 }
 
-.font-primary_color {
+.font-primary_color, div.listing strong {
   color: #23cb97;
 }
 
@@ -107,18 +107,17 @@ h4 {
   font-weight: 800;
 }
 
-p, a, h4, label {
+p, a, h4, label, li {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-weight: normal;
     font-size: 1rem;
     line-height: 1.7rem;
     margin: 0;
     padding: 0 0 0.5rem 0;
-    display: block;
     -webkit-font-smoothing: antialiased;
 }
 
-p {
+p, li {
   color: #bbbec1;
 }
 
