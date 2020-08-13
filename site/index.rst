@@ -22,7 +22,7 @@ Wide range of supported protocols
 Mix and match the protocols relevant to your use-case, and translate seamlessly
 between them.
 
-.. container:: modules centered main-container-wide
+.. container:: modules centered
 
 	.. include:: backends/midi_card.rst
 	.. include:: backends/artnet_card.rst
