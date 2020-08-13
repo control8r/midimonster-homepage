@@ -20,12 +20,12 @@ MIDIMonster v0.5
 	.. rst-class:: inline-link
 	`Read more on the GitHub release page <https://github.com/cbdevnet/midimonster/releases/tag/v0.5>`_
 
-	.. container:: download-boxes
-		- Debian Linux (amd64) *.deb* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster_0.5-1_amd64.deb>`_
-		- Linux (x64 ELF) *.tgz* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster-v0.5-linux.tgz>`_
-		- OS X (Mach-O) *.tgz* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster-v0.5-osx.tgz>`_
-		- Windows (x64 PE) *.zip* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster-v0.5-windows.zip>`_
-		- Source code *.tar.gz* `Download <https://github.com/cbdevnet/midimonster/archive/v0.5.zip>`_
+	.. rst-class:: download-boxes
+	- Debian Linux (amd64) *.deb* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster_0.5-1_amd64.deb>`_
+	- Linux (x64 ELF) *.tgz* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster-v0.5-linux.tgz>`_
+	- OS X (Mach-O) *.tgz* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster-v0.5-osx.tgz>`_
+	- Windows (x64 PE) *.zip* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster-v0.5-windows.zip>`_
+	- Source code *.tar.gz* `Download <https://github.com/cbdevnet/midimonster/archive/v0.5.zip>`_
 
 	.. container:: buttons
 
