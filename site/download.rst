@@ -57,6 +57,7 @@ during the installation. To do so, run ::
 
 as root on your system after using the installer.
 
+.. rst-class:: centered
 Next steps
 ##########
 
@@ -64,10 +65,14 @@ We've collected some resources to help you get your feet on the ground with the 
 
 .. container:: buttons split
 
-	.. rst-class:: button primary
+	
 	Learn how to start the MIDIMonster and write your first configuration
+
+	.. rst-class:: button primary
 	`Next steps </getting-started>`_
 
-	.. rst-class:: button secondary
+	
 	See what other people have built and profit from their experience
+	
+	.. rst-class:: button secondary
 	`Knowledge base <https://kb.midimonster.net/index.html>`_
