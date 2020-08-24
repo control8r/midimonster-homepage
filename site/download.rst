@@ -2,6 +2,7 @@
 Download
 ********
 
+.. rst-class:: centered
 Get the latest binary release builds here or try our `Linux installer <#using-the-linux-installer>`_.
 Of course, you can always `build the source yourself <#building>`_.
 
@@ -57,13 +58,14 @@ during the installation. To do so, run ::
 
 as root on your system after using the installer.
 
+
 .. rst-class:: centered
 Next steps
 ##########
 
 We've collected some resources to help you get your feet on the ground with the MIDIMonster
 
-.. container:: buttons split
+.. container:: two-by-two-matrix
 
 	
 	Learn how to start the MIDIMonster and write your first configuration
@@ -73,6 +75,6 @@ We've collected some resources to help you get your feet on the ground with the 
 
 	
 	See what other people have built and profit from their experience
-	
+
 	.. rst-class:: button secondary
 	`Knowledge base <https://kb.midimonster.net/index.html>`_
