@@ -64,7 +64,7 @@ body {
 =====  DOWNLOAD  =====
 =====================*/
 
-#download, #download .section {
+#download, #download .section, #getting-started, #getting-started .section {
 	display: block;
 
 }
