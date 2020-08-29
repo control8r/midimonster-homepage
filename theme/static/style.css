@@ -60,11 +60,12 @@ body {
 	grid-row: 2 / 5;  
 }
 
+
 /*====================
 =====  DOWNLOAD  =====
 =====================*/
 
-#download, #download .section, #getting-started, #getting-started .section {
+#download, #download .section, #getting-started, #getting-started ~ .section {
 	display: block;
 
 }
@@ -1059,6 +1060,7 @@ input {
       flex-wrap: wrap;
   position: relative;
   list-style: none;
+  padding: 2rem 1rem;
 }
 
 .tab-wrap-vertical { 

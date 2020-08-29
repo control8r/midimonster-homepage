@@ -1,4 +1,4 @@
-.. rst-class:: centered
+
 Getting started
 ###############
 
@@ -9,14 +9,17 @@ steps and we'll have you up and running in no time!
 Please select your operating system for some basic information on how
 to store and use MIDIMonster configuration files.
 
-.. raw:: html
 
-	<input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-	<label for="tab1">Linux</label>
-	<input type="radio" id="tab2" name="tabGroup1" class="tab">
-	<label for="tab2">Windows</label>
-	<input type="radio" id="tab3" name="tabGroup1" class="tab">
-	<label for="tab3">OSX</label>
+.. container:: tab-wrap
+
+	.. raw:: html
+
+		<input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+		<label for="tab1">Linux</label>
+		<input type="radio" id="tab2" name="tabGroup1" class="tab">
+		<label for="tab2">Windows</label>
+		<input type="radio" id="tab3" name="tabGroup1" class="tab">
+		<label for="tab3">OSX</label>
 
 	.. container:: tab-content
 
