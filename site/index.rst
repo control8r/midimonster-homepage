@@ -8,10 +8,10 @@ control protocols in the entertainment industry - and lots more besides
 .. container:: buttons
 
 	.. rst-class:: button secondary
-	`Download </download>`_
+	`Download </download.html>`_
 
 	.. rst-class:: button primary
-	`Get started </getting-started>`_
+	`Get started </getStarted.html>`_
 
 .. rst-class:: hero-img
 .. image:: assets/illustrations/Midimonster_with_Devices.svg
@@ -61,10 +61,10 @@ a feeling of what is possible.
 .. container:: buttons
 
 	.. rst-class:: button secondary
-	`Example configurations </getting-started#example-configs>`_
+	`Example configurations <https://github.com/cbdevnet/midimonster/tree/master/configs>`_
 
 	.. rst-class:: button primary
-	`Get started </getting-started>`_
+	`Get started </getStarted.html>`_
 
 .. image:: assets/illustrations/Puzzle_configuration.svg
 
