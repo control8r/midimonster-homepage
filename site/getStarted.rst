@@ -26,17 +26,18 @@ information on how to store and use MIDIMonster configuration files.
 		#######
 
 		If you're an adept Linux user, the MIDIMonster's philosophy of storing configuration
-		in plain text files will immediately seem familiar to you. If you're note,
-		it's still easy to get started: just create a new empty text file and start editing
-		it using your favourite text editor, such as `vim`, `emacs` or `kwrite`!
+		in plain text files will immediately seem familiar to you. If you're not,
+		it's very easy to get started: just create a new empty text file and start editing
+		it using your favourite text editor, such as `vim`, `kwrite` or `gedit`!
 
 		You can also take a look at the provided examples, and extend and modify those to
 		fit your particular setup.
 		We recommend using the `.cfg` suffix for MIDIMonster configuration files, but it's
 		up to your personal preference.
 
-		To run a specific configuration, run `midimonster <path/to/configfile.cfg>` in a
-		console to run your configuration!
+		To run the MIDIMonster and load a specific configuration, start `midimonster <path/to/configfile.cfg>`
+		in a console. The output will give you feedback on what the MIDIMonster is doing
+		and how it sees your configuration.
 
 	.. container:: tab-content
 
