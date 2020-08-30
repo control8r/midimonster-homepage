@@ -213,8 +213,8 @@ header li.active a{
     margin-right:0;
   }
   header li, footer a {
-    font-size: 0.9rem !important;
-    line-height: 1.1rem !important;
+    font-size: 1.1rem !important;
+    line-height: 1.4rem !important;
   }
 }
 
@@ -230,9 +230,6 @@ header li.active a{
     color: rgba(187, 190, 193, 0.66);
 }
 
-#download h1 {
-  display: none;
-}
 
 .download-box .download-os {
   color: #23cb97;
@@ -389,9 +386,6 @@ footer span {
     line-height: 3.7rem;
   }
 
-  header + div h1::after{
-    margin: 0;
-  }
 
   h2 {
     font-size: 2.5rem;
@@ -410,10 +404,15 @@ footer span {
 
 
 
-  h1 + p, h2 + p, h3 + p {
+  h1 + p, h2 + p, h3 + p,  h1 + p + p {
     max-width:600px;
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
+  }
+
+  h1 + p + p {
+	top: -1rem;
+    position: relative;
   }
 
   .modules .module-card p, .modules .module-card a{
