@@ -48,12 +48,6 @@ body {
 	padding: 4rem 3rem;
 }
 
-@media (min-width: 640px) { 
-	#getting-started .section *, #download .section *{
-		max-width: 800px;
-		margin: 0 auto;
-	}
-}
 
 
 #getting-started .section:nth-child(2n), #download .section:nth-child(2n-1){
