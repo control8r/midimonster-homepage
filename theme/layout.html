@@ -73,7 +73,7 @@
           {%- block sidebarlogo %}
           {%- if logo %}
             <p class="logo"><a href="{{ pathto(master_doc) }}">
-              <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
+              <img class="logo" src="_static/' + logo, 1) }}" alt="Logo"/>
             </a></p>
           {%- endif %}
           {%- endblock %}
@@ -110,10 +110,10 @@
 {%- endmacro %}
 
 {%- macro css() %}
-    <link rel="stylesheet" href="{{ pathto('_static/reset.css', 1) }}" type="text/css" />
-    <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
-    <link rel="stylesheet" href="{{ pathto('_static/fonts.css', 1) }}" type="text/css" />
-    <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
+    <link rel="stylesheet" href="_static/reset.css" type="text/css" />
+    <link rel="stylesheet" href="_static/' + style, 1) }}" type="text/css" />
+    <link rel="stylesheet" href="_static/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     {%- for css in css_files %}
       {%- if css|attr("filename") %}
     {{ css_tag(css) }}
@@ -155,16 +155,16 @@
     {%- if use_opensearch %}
     <link rel="search" type="application/opensearchdescription+xml"
           title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}"
-          href="{{ pathto('_static/opensearch.xml', 1) }}"/>
+          href="_static/opensearch.xml"/>
     {%- endif %}
 	<!-- Desktop browsers -->
-	<link rel="shortcut icon" href="{{ pathto('_static/favicons/midimonster_favicon.ico', 1) }}">
+	<link rel="shortcut icon" href="_static/favicons/midimonster_favicon.ico">
 	<!-- Modern browsers (196x196 should cover all modern browsers) -->
-	<link rel="icon" type="image/png" href="{{ pathto('_static/favicons/midimonster_16x16.png', 1) }}" sizes="16x16">
-	<link rel="icon" type="image/png" href="{{ pathto('_static/favicons/midimonster_32x32.png', 1) }}" sizes="32x32">
-	<link rel="icon" type="image/png" href="{{ pathto('_static/favicons/midimonster_48x48.png', 1) }}" sizes="48x48">
-	<link rel="icon" type="image/png" href="{{ pathto('_static/favicons/midimonster_128x128.png', 1) }}" sizes="128x128">
-	<link rel="icon" type="image/png" href="{{ pathto('_static/favicons/midimonster_256x256.png', 1) }}" sizes="256x256">
+	<link rel="icon" type="image/png" href="_static/favicons/midimonster_16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="_static/favicons/midimonster_32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="_static/favicons/midimonster_48x48.png" sizes="48x48">
+	<link rel="icon" type="image/png" href="_static/favicons/midimonster_128x128.png" sizes="128x128">
+	<link rel="icon" type="image/png" href="_static/favicons/midimonster_256x256.png" sizes="256x256">
     {%- endif %}
 {%- block extrahead %} {% endblock %}
   </head>
@@ -195,9 +195,9 @@
       </div>
       <div class="socials flex flex-mobile-algn-horiz footer-line">
         <p>Follow us on:    </p>
-        <a href="https://github.com/cbdevnet/midimonster/" target="_blank"><img src="{{ pathto('_static/icons/svg/github_icon.svg', 1) }}" alt="GitHub"></a>
-        <a href="https://webirc.hackint.org/#irc://irc.hackint.org/#midimonster" target="_blank"><img src="{{ pathto('_static/icons/svg/irc_icon.svg', 1) }}" alt="Mail"></a>
-        <a href="mailto:mailto:contact@midimonster.net"><img src="{{ pathto('_static/icons/svg/mail_icon.svg', 1) }}" alt="IRC"></a>
+        <a href="https://github.com/cbdevnet/midimonster/" target="_blank"><img src="_static/icons/svg/github_icon.svg" alt="GitHub"></a>
+        <a href="https://webirc.hackint.org/#irc://irc.hackint.org/#midimonster" target="_blank"><img src="_static/icons/svg/irc_icon.svg" alt="Mail"></a>
+        <a href="mailto:mailto:contact@midimonster.net"><img src="_static/icons/svg/mail_icon.svg" alt="IRC"></a>
       </div>
     </footer>
 {%- endblock %}
