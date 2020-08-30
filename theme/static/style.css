@@ -43,7 +43,7 @@ body {
 }
 
 
-#getting-started .section, #download .section{
+#getting-started .section, #download .section, #legal-notice-impressum{
 	display: block;
 	padding: 4rem 3rem;
 }
@@ -77,24 +77,40 @@ body {
 	grid-column: 3;
 	grid-row: 2 / 5;  
 }
+/*====================
+=====   LEGAL   =====
+=====================*/
+.address-info {
+	width:40%;
+	margin: 0 auto 2rem auto;
+	padding: 2rem 2rem 1rem 2rem!important;
+	background-color: #122131 !important;
+}
+.address-info p {
+	-webkit-user-modify: read-write-plaintext-only;
+}
+
+#legal-notice-impressum > p + p {
+	margin-bottom: 2rem !important;
+}
 
 
 /*====================
 =====  DOWNLOAD  =====
 =====================*/
-#download > h1, #download > p, #getting-started > h1, #getting-started > p {
+#download > h1, #download > p, #getting-started > h1, #getting-started > p, #legal-notice-impressum > h1, #legal-notice-impressum > p {
 	text-align: center;
 }
 
-#download > h1, #getting-started > h1{
+#download > h1, #getting-started > h1, #legal-notice-impressum > h1{
 	margin: 4rem auto 0 auto !important;
 }
 
-#download > p, #getting-started > p {
+#download > p, #getting-started > p, #legal-notice-impressum > p {
 	margin: 1rem auto 4rem auto !important;
 }
 
-#download p, #getting-started p {
+#download p, #getting-started p, #legal-notice-impressum p {
 	width:80%;
 }
 

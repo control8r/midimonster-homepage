@@ -5,7 +5,9 @@ Legal Notice (Impressum)
 The following legal information (Impressum) is required under German law.
 
 The party responsible for the content of `https://midimonster.net <https://midimonster.net>`_
-and any services offered via this site is ::
+and any services offered via this site is
+
+.. container:: address-info
 
 	Fabian Stumpf
 	Jollystrasse 1
