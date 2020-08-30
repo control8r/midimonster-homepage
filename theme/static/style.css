@@ -88,7 +88,6 @@ body {
 	border-radius: 0.5rem;
 }
 .address-info p {
-	-webkit-user-modify: read-write-plaintext-only;
 	margin: 0;
     padding: 0;
 }
