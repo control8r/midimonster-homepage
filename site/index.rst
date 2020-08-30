@@ -1,6 +1,6 @@
 
 Multi-protocol translation software
-#################################
+###################################
 
 The MIDIMonster is an universal control and translation tool for most show
 control protocols in the entertainment industry - and lots more besides
