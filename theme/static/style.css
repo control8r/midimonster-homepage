@@ -83,12 +83,16 @@ body {
 .address-info {
 	width:40%;
 	margin: 0 auto 2rem auto;
-	padding: 2rem 2rem 1rem 2rem!important;
+	padding: 2rem !important;
 	background-color: #122131 !important;
+	border-radius: 0.5rem;
 }
 .address-info p {
 	-webkit-user-modify: read-write-plaintext-only;
+	margin: 0;
+    padding: 0;
 }
+
 
 #legal-notice-impressum > p + p {
 	margin-bottom: 2rem !important;
