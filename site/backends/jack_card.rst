@@ -15,4 +15,4 @@
 	.. container:: module-buttons
 	
 		.. rst-class:: button info-button
-		`More <https://github.com/cbdevnet/midimonster/blob/master/backends/jack.md>`_
+		`jack <https://github.com/cbdevnet/midimonster/blob/master/backends/jack.md>`_
