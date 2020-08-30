@@ -45,10 +45,19 @@ body {
 
 #getting-started .section, #download .section{
 	display: block;
+	padding: 4rem 3rem;
 }
 
-#getting-started .section:nth-child(2n-1), #download .section:nth-child(2n-1){
-	background-color: #122131;
+@media (min-width: 640px) { 
+	#getting-started .section *, #download .section *{
+		max-width: 800px;
+		margin: 0 auto;
+	}
+}
+
+
+#getting-started .section:nth-child(2n), #download .section:nth-child(2n-1){
+	background-color: #122131 !important;
 }
 
 #getting-started, #download {
@@ -79,6 +88,21 @@ body {
 /*====================
 =====  DOWNLOAD  =====
 =====================*/
+#download > h1, #download > p, #getting-started > h1, #getting-started > p {
+	text-align: center;
+}
+
+#download > h1, #getting-started > h1{
+	margin: 4rem auto 0 auto !important;
+}
+
+#download > p, #getting-started > p {
+	margin: 1rem auto 4rem auto !important;
+}
+
+#download p, #getting-started p {
+	width:80%;
+}
 
 #download, #download .section, #getting-started, #getting-started ~ .section {
 	display: block;
@@ -174,7 +198,8 @@ li {
 		flex-flow: wrap;
 	}
 	.download-boxes li {
-		background-color: #122131;
+		/*background-color: #122131;*/
+		background-color:rgba(29, 50, 71, 1) ;
 		margin: 1.5rem;
 		border-radius: 1.5rem;
 		padding: 0.8rem 1rem;
