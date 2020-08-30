@@ -1,6 +1,6 @@
 
 Getting started
-###############
+*****************
 
 So you've just downloaded the package for your operating system or
 maybe even built the sources yourself! Let's take a look at the next
@@ -10,7 +10,7 @@ Please select your operating system for some basic information on how
 to store and use MIDIMonster configuration files.
 
 
-.. container:: tab-wrap
+.. container:: section tab-wrap
 
 	.. raw:: html
 
