@@ -87,7 +87,7 @@ Dedicated and helpful community
 .. container:: buttons
 
 	.. rst-class:: button secondary
-	`Knowledge Base <https://kb.midimonster.net/use-cases>`_
+	`Knowledge Base <https://kb.midimonster.net/>`_
 
 .. rst-class:: centered
 Be a part of it!
@@ -99,4 +99,4 @@ on how you can help in developing, promoting and growing this open source projec
 .. container:: buttons
 
 	.. rst-class:: button secondary
-	`How to contribute <https://kb.midimonster.net/use-cases>`_
+	`How to contribute <https://kb.midimonster.net/dev/Contributing.html>`_
