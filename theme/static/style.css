@@ -42,17 +42,20 @@ body {
     grid-template-columns: 5% 30% 50% 5%;
 }
 
-#download .section:nth-child(2n) {
-	background-color:rgba(29, 50, 71, 1);
-}
 
 #getting-started .section, #download .section{
 	display: block;
 }
 
 #getting-started .section:nth-child(2n-1), #download .section:nth-child(2n-1){
-	background-color:rgba(29, 50, 71, 1);
+	background-color: #122131;
 }
+
+#getting-started, #download {
+	padding: 0 !important;
+	background-color:rgba(29, 50, 71, 1) !important;
+}
+
 
 .section:not(.centered):nth-child(2n) > h1 {
 	grid-column: 2;
@@ -1059,7 +1062,7 @@ input {
 .tab-wrap, .tab-wrap-vertical {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex !important;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;

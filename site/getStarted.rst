@@ -10,7 +10,7 @@ Please select your operating system for some basic information on how
 to store and use MIDIMonster configuration files.
 
 
-.. container:: tab-wrap
+.. container:: section tab-wrap
 
 	.. raw:: html
 
