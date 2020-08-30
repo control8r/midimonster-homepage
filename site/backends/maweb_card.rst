@@ -10,9 +10,9 @@
 		Linux / OS X / Windows
 
 		.. rst-class:: description
-		Interact with GrandMA consoles
+		Interact with GrandMA lighting consoles
 
 	.. container:: module-buttons
 	
 		.. rst-class:: button info-button
-		`More <https://github.com/cbdevnet/midimonster/blob/master/backends/maweb.md>`_
+		`maweb <https://github.com/cbdevnet/midimonster/blob/master/backends/maweb.md>`_

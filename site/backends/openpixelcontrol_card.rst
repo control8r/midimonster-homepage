@@ -15,4 +15,4 @@
 	.. container:: module-buttons
 	
 		.. rst-class:: button info-button
-		`OPC <https://github.com/cbdevnet/midimonster/blob/master/backends/openpixelcontrol.md>`_
+		`openpixelcontrol <https://github.com/cbdevnet/midimonster/blob/master/backends/openpixelcontrol.md>`_

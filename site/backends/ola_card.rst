@@ -15,4 +15,4 @@
 	.. container:: module-buttons
 
 		.. rst-class:: button info-button
-		`More <https://github.com/cbdevnet/midimonster/blob/master/backends/ola.md>`_
+		`ola <https://github.com/cbdevnet/midimonster/blob/master/backends/ola.md>`_
