@@ -73,7 +73,7 @@
           {%- block sidebarlogo %}
           {%- if logo %}
             <p class="logo"><a href="{{ pathto(master_doc) }}">
-              <img class="logo" src="_static/' + logo, 1) }}" alt="Logo"/>
+              <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
             </a></p>
           {%- endif %}
           {%- endblock %}
@@ -110,10 +110,10 @@
 {%- endmacro %}
 
 {%- macro css() %}
-    <link rel="stylesheet" href="_static/reset.css" type="text/css" />
-    <link rel="stylesheet" href="_static/' + style, 1) }}" type="text/css" />
-    <link rel="stylesheet" href="_static/fonts.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/reset.css', 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/fonts.css', 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
     {%- for css in css_files %}
       {%- if css|attr("filename") %}
     {{ css_tag(css) }}
@@ -155,7 +155,7 @@
     {%- if use_opensearch %}
     <link rel="search" type="application/opensearchdescription+xml"
           title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}"
-          href="_static/opensearch.xml"/>
+          href="{{ pathto('_static/opensearch.xml', 1) }}"/>
     {%- endif %}
 	<!-- Desktop browsers -->
 	<link rel="shortcut icon" href="_static/favicons/midimonster_favicon.ico">
