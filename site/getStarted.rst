@@ -1,6 +1,6 @@
 
 Getting started
-###############
+*****************
 
 So you've just downloaded the package for your operating system or
 maybe even built the sources yourself! Let's take a look at the next

@@ -1,6 +1,5 @@
-********
 Download
-********
+*********
 
 .. rst-class:: centered
 Get the latest binary release builds here or try our `Linux installer <#using-the-linux-installer>`_.
@@ -65,7 +64,7 @@ Next steps
 
 We've collected some resources to help you get your feet on the ground with the MIDIMonster
 
-.. container:: two-by-two-matrix
+.. container:: two-by-two-matrix line-on-top
 
 	
 	Learn how to start the MIDIMonster and write your first configuration
