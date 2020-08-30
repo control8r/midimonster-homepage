@@ -23,7 +23,7 @@ information on how to store and use MIDIMonster configuration files.
 	.. container:: tab-content
 
 		Linux
-		#######
+		#####
 
 		If you're an adept Linux user, the MIDIMonster's philosophy of storing configuration
 		in plain text files will immediately seem familiar to you. If you're not,
@@ -56,7 +56,7 @@ information on how to store and use MIDIMonster configuration files.
 		powerful like Notepad++ to create your first configuration.
 
 		To run a specific conguration, just drag-and-drop the file you created onto
-		`midimonster.exe`. This start the MIDIMonster and will pop up a Window giving
+		`midimonster.exe`. This will start the MIDIMonster and will pop up a Window giving
 		you information on the current status.
 
 	.. container:: tab-content
