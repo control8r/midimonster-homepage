@@ -1,14 +1,13 @@
 
 Getting started
-*****************
+****************
 
 So you've just downloaded the package for your operating system or
 maybe even built the sources yourself! Let's take a look at the next
 steps and we'll have you up and running in no time!
 
-Please select your operating system for some basic information on how
-to store and use MIDIMonster configuration files.
-
+Please select your operating system for a quick start guide and basic
+information on how to store and use MIDIMonster configuration files.
 
 .. container:: section tab-wrap
 
@@ -24,9 +23,21 @@ to store and use MIDIMonster configuration files.
 	.. container:: tab-content
 
 		Linux
-		#######
+		#####
 
-		TBD
+		If you're an adept Linux user, the MIDIMonster's philosophy of storing configuration
+		in plain text files will immediately seem familiar to you. If you're not,
+		it's very easy to get started: just create a new empty text file and start editing
+		it using your favourite text editor, such as `vim`, `kwrite` or `gedit`!
+
+		You can also take a look at the provided examples, and extend and modify those to
+		fit your particular setup.
+		We recommend using the `.cfg` suffix for MIDIMonster configuration files, but it's
+		up to your personal preference.
+
+		To run the MIDIMonster and load a specific configuration, start `midimonster <path/to/configfile.cfg>`
+		in a console. The output will give you feedback on what the MIDIMonster is doing
+		and how it sees your configuration.
 
 	.. container:: tab-content
 
@@ -42,10 +53,10 @@ to store and use MIDIMonster configuration files.
 		but the MIDIMonster does not really care whether you leave it as `.txt`.
 
 		Open this file with a plain text editor such as Notepad, or something more
-		powerful like Notpad++ to create your first configuration.
+		powerful like Notepad++ to create your first configuration.
 
 		To run a specific conguration, just drag-and-drop the file you created onto
-		`midimonster.exe`. This start the MIDIMonster and will pop up a Window giving
+		`midimonster.exe`. This will start the MIDIMonster and will pop up a Window giving
 		you information on the current status.
 
 	.. container:: tab-content
@@ -54,6 +65,9 @@ to store and use MIDIMonster configuration files.
 		###
 
 		TBD
+
+If you're still not entirely sure on how to start using the MIDIMonster, read on for some more
+in-depth explanations!
 
 Gathering information
 *********************
