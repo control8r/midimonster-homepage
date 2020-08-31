@@ -1,4 +1,4 @@
-
+.. rst-class:: hero
 Multi-protocol translation software
 ###################################
 
