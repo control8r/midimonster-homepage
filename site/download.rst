@@ -66,7 +66,6 @@ We've collected some resources to help you get your feet on the ground with the 
 
 .. container:: two-by-two-matrix line-on-top
 
-	
 	Learn how to start the MIDIMonster and write your first configuration
 
 	.. rst-class:: button primary
