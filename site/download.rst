@@ -3,7 +3,7 @@ Download
 
 .. rst-class:: centered
 Get the latest binary release builds here or try our `Linux installer <#using-the-linux-installer>`_.
-Of course, you can always `build the source yourself <#building>`_.
+Of course, you can always `build the source yourself <https://github.com/cbdevnet/midimonster#building-from-source>`_.
 
 MIDIMonster v0.5
 ################
