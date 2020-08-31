@@ -202,7 +202,7 @@ li {
 }
 
 .line-on-top {
-	border-top: 1px solid white;
+	border-top: 2px solid #23cb97;
 	padding-top: 1rem !important;
 	margin-top: 1rem !important;
 }
@@ -500,8 +500,10 @@ border-bottom-left-radius: 0;
 
 .highlight span {
   word-break: break-all;
-    /* overflow-wrap: break-word; */
-    white-space: break-spaces;
+}
+.highlight pre {
+	overflow-x: scroll;
+	overflow-y:hidden;
 }
 
 .no-padding-on-sides {
@@ -1263,6 +1265,10 @@ table th p {
   padding-left: 1rem;
 }
 
+.algn-left p{
+	text-align: left;
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 511px),
 only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 511px),
@@ -1271,6 +1277,11 @@ only screen and (        min-device-pixel-ratio: 2)      and (max-width: 511px),
 only screen and (                min-resolution: 192dpi) and (max-width: 511px),
 only screen and (                min-resolution: 2dppx)  and (max-width: 511px) { 
 /* Small screen, retina, stuff to override above media query */
+#getting-started .section, #download .section, #legal-notice-impressum {
+	padding: 3rem 1rem;
+}
+
+/* INDEX.RST */
 	.section:not(.centered) {
 		display: grid;
 		grid-template-columns: 100%;
@@ -1293,10 +1304,71 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 511px) 
 	}
 	.buttons {
 		flex-direction: column;
+		align-items: center;
 	}
 	footer .socials p{
 		display: none;
 	}
 
+/* DOWNLOAD.RST */
+	.release {
+		display: flex;
+		flex-direction: column;
+		}
 
+	.release > ul:first-child {
+		text-align:left; 
+		position: relative;
+		left: 5%;
+	}
+	strong {
+		color:#fff;
+		font-weight: 700;
+	}
+	.download-boxes {
+		margin-top: 2rem;
+	}
+	.download-boxes {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width:110%;
+		margin: 1rem auto 0 auto;
+    	position: relative;
+
+	}
+	.download-boxes li {
+		background-color: rgba(29, 50, 71, 1) !important;
+		width:28%;
+		margin: 0.5rem;
+	}
+	#download p, #getting-started p, #legal-notice-impressum p {
+		width: 95%;
+		margin: 0 auto;
+	}
+	.two-by-two-matrix {
+		display: flex;
+		flex-direction: column;
+
+	}
+	.two-by-two-matrix .button {
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
+		position: relative;
+		top:-1rem;
+	}
+	.two-by-two-matrix .button:last-child {
+		border-bottom: none;
+	}
+
+	.highlight-default {
+		text-align: left !important;
+	}
+	.highlight {
+		padding: 1rem;
+		overflow-x:scroll;
+		overflow-y: hidden;}
+	.algn-left p{
+		text-align: left !important;
+	}
 }

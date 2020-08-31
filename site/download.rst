@@ -33,8 +33,9 @@ MIDIMonster v0.5
 		`Older releases <https://github.com/cbdevnet/midimonster/releases>`_
 
 		.. rst-class:: button primary
-		`Next steps </getting-started>`_
+		`Next steps <#id6>`_
 
+.. rst-class:: algn-left
 Using the Linux installer
 #########################
 
@@ -67,7 +68,7 @@ We've collected some resources to help you get your feet on the ground with the 
 	Learn how to start the MIDIMonster and write your first configuration
 
 	.. rst-class:: button primary
-	`Next steps </getStarted.html>`_
+	`Get started </getStarted.html>`_
 
 	See what other people have built and profit from their experience
 
