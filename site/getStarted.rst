@@ -66,9 +66,22 @@ information on how to store and use MIDIMonster configuration files.
 
 		TBD
 
+.. rst-class:: free-text
 If you're still not entirely sure on how to start using the MIDIMonster, read on for some more
 in-depth explanations!
 
+Navigation
+***********
+
+.. container:: navbar
+
+	`Building from source <#source>`__
+	`Building from source <#source>`__
+	`Building from source <#source>`__
+	`Building from source <#source>`__
+
+
+.. rst-class:: mobile-collapsable
 Gathering information
 *********************
 
@@ -84,6 +97,7 @@ use your MIDI controller to to control some of those ArtNet fixtures, too.
 In that scenario, you would need both sACN and MIDI input to the MIDIMonster (both from
 the desk and your controller), as well as ArtNet output from the MIDIMonster to the fixtures.
 
+.. rst-class:: mobile-collapsable
 Some background
 ***************
 
@@ -100,6 +114,7 @@ provides one (virtual) MIDI port.
 
 Every instance will provide a set of channels, which can be set to an absolute value.
 
+.. rst-class:: mobile-collapsable
 Creating a new configuration
 ****************************
 
@@ -117,6 +132,7 @@ a header line in square brackets.
 
 The next paragraphs will give some examples and go into detail on each of these sections.
 
+.. rst-class:: mobile-collapsable
 Adding backends to your configuration
 **************************************
 
@@ -140,6 +156,7 @@ on any IPv4 address configured on our computer::
 You can leave out these sections for backends where you are content with the default values
 for the global configuration as well as for backends that do not require any global configuration.
 
+.. rst-class:: mobile-collapsable
 Creating instances
 ******************
 
@@ -166,6 +183,7 @@ to send the output to::
 This instance configuration gives us write (output from the MIDIMonster) access to the 512 DMX channels
 transferred via ArtNet on universe 1 (sent via IPv4 broadcast to the entire local network).
 
+.. rst-class:: mobile-collapsable
 Mapping channels
 ****************
 
@@ -200,6 +218,7 @@ This means that the following two configurations are functionally equivalent::
 	[map]
 	in1.1 <> out1.1
 
+.. rst-class:: mobile-collapsable
 Mapping many channels
 *********************
 
@@ -219,6 +238,7 @@ line evaluates to::
 To use such a multi-mapping, both sides of the mapping must evaluate to the same number of channels,
 or one side must be exactly one channel.
 
+.. rst-class:: mobile-collapsable
 Adding comments
 ***************
 

@@ -428,3 +428,10 @@ footer span {
 .highlight .gp {
   color: #23cb97;
 }
+
+.free-text {
+	font-style: italic;
+	margin: 2rem auto 2rem auto !important;
+	color: #fff;
+}
+

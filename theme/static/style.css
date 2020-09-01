@@ -3,8 +3,9 @@ body {
   font-weight: normal;
   color: #fff; /* basic color for all text tags */
   font-size: 16px; /* default */
+  scroll-behavior: smooth;
 }
-@media (min-width:512px) { 
+@media (min-width:641px) { 
 
 	.section:not(.centered) {
 		display: grid;
@@ -111,12 +112,15 @@ body {
 	margin: 4rem auto 0 auto !important;
 }
 
-#download > p, #getting-started > p, #legal-notice-impressum > p {
+#download > p:not(.free-text), #getting-started > p:not(.free-text), #legal-notice-impressum > p:not(.free-text) {
 	margin: 1rem auto 4rem auto !important;
 }
 
 #download p, #getting-started p, #legal-notice-impressum p {
 	width:80%;
+}
+.tab-content p {
+	margin: 0 auto;
 }
 
 #download, #download .section, #getting-started, #getting-started ~ .section {
@@ -806,6 +810,58 @@ footer {
   }
 }
 /*====================
+===== GET STARTED =====
+=====================*/
+#getting-started ~ .section p{
+	max-width:none !important;
+}
+
+#getting-started ~ .section{
+	padding: 3rem 1.5rem;
+}
+
+@media (min-width: 700px) {
+	#navigation h1 {
+		display: none;
+	}
+
+	#navigation {
+		padding: 1rem !important;
+		background:rgba(29, 50, 71, 1) !important;
+		position: sticky;
+		top:0;
+		z-index: 1000;
+		box-shadow: 2rem 0 2rem rgba(0, 0, 0, 0.4);
+	}
+
+	.navbar p{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom:0;
+		padding-bottom: 0;
+	}
+	.navbar p a {
+		display: inline-block;
+		position: relative;
+		padding-right: 1.5rem;
+	}
+	.navbar p a:after {
+		content: '';
+		position: absolute;
+		bottom: 1.1rem;
+		right: 0.3rem;
+		width:0;
+		height:0;
+		border-left: .4rem solid transparent;
+		border-right: .4rem solid transparent;
+		border-top: 0.4rem solid #23cb97;
+		margin: 0 auto;
+		z-index: 100;
+	}
+  }
+
+
+/*====================
 ======= BODY =======
 =====================*/
 .section {
@@ -1269,13 +1325,32 @@ table th p {
 	text-align: left;
 }
 
+.free-text {
+	margin: 2rem auto 2rem auto !important;
+	padding-top: 1rem;
+	position: relative;
+}
+
+.free-text:before {
+	content: '';
+  background-color: #23cb97;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.1em;
+  width: 6rem;
+  margin: 0 auto;
+  border-top: 1px solid black;
+}
+
 @media
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 511px),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 511px),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 511px),
-only screen and (        min-device-pixel-ratio: 2)      and (max-width: 511px),
-only screen and (                min-resolution: 192dpi) and (max-width: 511px),
-only screen and (                min-resolution: 2dppx)  and (max-width: 511px) { 
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 640px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 640px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 640px),
+only screen and (        min-device-pixel-ratio: 2)      and (max-width: 640px),
+only screen and (                min-resolution: 192dpi) and (max-width: 640px),
+only screen and (                min-resolution: 2dppx)  and (max-width: 640px) { 
 /* Small screen, retina, stuff to override above media query */
 #getting-started .section, #download .section, #legal-notice-impressum {
 	padding: 3rem 1rem;
@@ -1371,4 +1446,50 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 511px) 
 	.algn-left p{
 		text-align: left !important;
 	}
+
+/* GETSTARTED.RST */
+	.tab-content {
+		text-align:left;
+	}
+	
+	.mobile-collapsable {
+		background-color:rgba(29, 50, 71, 1);
+		height: 1.3rem;
+		overflow: hidden;
+		box-shadow: -2rem 0 2rem 2rem rgba(0, 0, 0, 0.4);
+		position: relative;
+		transition: all 1s ease-in-out;
+	}
+
+	.mobile-collapsable:after {
+		content: '';
+		position: absolute;
+		bottom: 0.5rem;
+		left: 0;
+		right: 0;
+		width:0;
+		height:0;
+		border-left: 1.5rem solid transparent;
+		border-right: 1.5rem solid transparent;
+		border-top: 1rem solid #23cb97;
+		margin: 0 auto;
+		z-index: 100;
+	}
+
+	.mobile-collapsable:first-child {
+		box-shadow: none;
+	}
+	.mobile-collapsable:active,  .mobile-collapsable:hover{
+		height:auto;
+		transition: height 1s ease-in-out;
+	}
+	.mobile-collapsable:active:after,  .mobile-collapsable:hover:after{
+		display: none;
+	}
+
+	.mobile-collapsable h1 {
+		font-size: 2rem;
+	}
+
+
 }
