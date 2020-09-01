@@ -799,9 +799,6 @@ footer {
 
 }
 
-@media (min-width: 1024px) {
-
-}
 
 
 @media (min-width: 1200px) {
@@ -848,8 +845,8 @@ footer {
 	.navbar p a:after {
 		content: '';
 		position: absolute;
-		bottom: 1.1rem;
-		right: 0.3rem;
+		bottom: 0rem;
+		right: 0rem;
 		width:0;
 		height:0;
 		border-left: .4rem solid transparent;
@@ -859,6 +856,29 @@ footer {
 		z-index: 100;
 	}
   }
+
+@media (min-width: 800px) {
+	#navigation{
+		max-width: 25%;
+		left: 0;
+		height: 100vh;
+		border-right: white;
+		box-shadow: none;
+		float: left;
+	}
+	.navbar p{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom:0;
+		padding-bottom: 0;
+		flex-direction: column;
+	}
+	#navigation ~ .section{
+		width: 60%;
+		position: relative;
+		right:0;
+	}
+}
 
 
 /*====================

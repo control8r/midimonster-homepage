@@ -75,10 +75,14 @@ Navigation
 
 .. container:: navbar
 
-	`Building from source <#source>`__
-	`Building from source <#source>`__
-	`Building from source <#source>`__
-	`Building from source <#source>`__
+	`Gathering information <#gathering-information>`__
+	`Some background <#some-background>`__
+	`Creating a new configuration <#creating-a-new-configuration>`__
+	`Adding backends to your configuration <#adding-backends-to-your-configuration>`__
+	`Creating instances <#creating-instances>`__
+	`Mapping channels <#mapping-channels>`__
+	`Mapping many channels <#mapping-many-channels>`__
+	`Adding comments <#adding-comments>`__
 
 
 .. rst-class:: mobile-collapsable
