@@ -116,9 +116,20 @@ body {
 	margin: 1rem auto 4rem auto !important;
 }
 
-#download p, #getting-started p, #legal-notice-impressum p {
+#download p, #getting-started p, #legal-notice-impressum p, #download .section:not(.centered) h2 + p {
 	width:80%;
+	max-width:80%;
+	margin:0 auto;
 }
+
+@media (max-width: 768px) {
+	#download p, #getting-started p, #legal-notice-impressum p, #download .section:not(.centered) h2 + p {
+		max-width:90%;
+		width:90%;
+		margin:0 auto;
+	}
+}
+
 .tab-content p {
 	margin: 0 auto;
 }
@@ -136,6 +147,7 @@ padding: 0 !important;
 	display: flex;
 	flex-direction: column;
 }
+
 
 .release {
 	display: grid;
@@ -215,18 +227,20 @@ li {
 	.download-boxes {
 		flex-direction: row;
 		flex-flow: wrap;
+		align-content: start;
 	}
 	.download-boxes li {
 		/*background-color: #122131;*/
 		background-color:rgba(29, 50, 71, 1) ;
-		margin: 1.5rem;
+		margin: 0.5rem;
 		border-radius: 1.5rem;
 		padding: 0.8rem 1rem;
 		box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
 		display: flex;
 		flex-direction: column;
 		height: fit-content;
-		min-width: 200px;
+		width: 150px;
+		height:130px;
 	}
 	
 	.download-boxes li p {
@@ -259,6 +273,14 @@ li {
 		grid-row: 2;
 		grid-column: 2;
 	}
+	#download .section {
+		padding: 3rem 2rem !important;
+	}
+	#download .release .buttons {
+		flex-direction: column;
+	}
+	
+	
 	}
 	
 
@@ -828,42 +850,55 @@ footer {
 	padding: 3rem 1.5rem;
 }
 
+#navigation {
+	display: block;
+}
+
 @media (min-width: 700px) {
 	#navigation h1 {
 		display: none;
 	}
 
 	#navigation {
-		padding: 1rem !important;
-		background:rgba(29, 50, 71, 1) !important;
+		padding: 0.5rem !important;
+		background:rgba(29, 50, 71, 0.9) !important;
 		position: sticky;
 		top:0;
 		z-index: 1000;
 		box-shadow: 2rem 0 2rem rgba(0, 0, 0, 0.4);
 	}
 
-	.navbar p{
+	#navigation .navbar {
+		padding: 0 !important;
+	}
+
+	#navigation .navbar p{
 		display: flex;
 		justify-content: space-between;
 		margin-bottom:0;
 		padding-bottom: 0;
+		flex-wrap: wrap;
+		justify-content: flex-start;
 	}
-	.navbar p a {
+	#navigation .navbar p a {
 		display: inline-block;
 		position: relative;
-		padding-right: 1.5rem;
+		padding: .5rem 1.5rem .5rem .5rem;
+		border: 1px solid;
+		border-radius: 10px;
+		margin: 0.3rem;
 	}
-	.navbar p a:after {
+	#navigation .navbar p a:after {
 		content: '';
 		position: absolute;
-		bottom: 0rem;
-		right: 0rem;
-		width:0;
-		height:0;
-		border-left: .4rem solid transparent;
-		border-right: .4rem solid transparent;
-		border-top: 0.4rem solid #23cb97;
-		margin: 0 auto;
+		bottom: 1.1rem;
+		right: 0.5rem;
+		width: 0;
+		height: 0;
+		border-left: .3rem solid transparent;
+		border-right: .3rem solid transparent;
+		border-top: 0.3rem solid #23cb97;
+		/* margin: 0 auto; */
 		z-index: 100;
 	}
   }
@@ -872,10 +907,15 @@ footer {
 	#navigation{
 		max-width: 25%;
 		left: 0;
+		top: 20%;
 		height: 100vh;
 		border-right: white;
 		box-shadow: none;
 		float: left;
+		height:fit-content;
+		padding: 2rem !important;
+		background:rgba(29, 50, 71, 1) !important;
+		border-right: 1px solid #122131;
 	}
 	.navbar p{
 		display: flex;
@@ -884,11 +924,25 @@ footer {
 		padding-bottom: 0;
 		flex-direction: column;
 	}
-	#navigation ~ .section{
-		width: 60%;
+	#navigation ~ .section h1, #navigation ~ .section p, #navigation ~ .section > div{
 		position: relative;
-		right:0;
+		padding-left:30%;
 	}
+	#navigation + .section h1, #navigation + .section p{
+		position: relative;
+		padding-left:0;
+	}
+	#navigation .navbar p a {
+		display: inline-block;
+		position: relative;
+		padding: .5rem 1.5rem .5rem .5rem;
+		border: none;
+		margin: 0;
+	}
+	#navigation .navbar p a:after {
+		display: none;
+	}
+
 }
 
 
@@ -1479,8 +1533,14 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 640px) 
 	}
 
 /* GETSTARTED.RST */
+	#getting-started > p:not(.free-text)	 {
+		margin-bottom: 1rem !important;
+	}
 	.tab-content {
 		text-align:left;
+	}
+	#navigation {
+		display: none !important;
 	}
 	
 	.mobile-collapsable {
@@ -1490,6 +1550,10 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 640px) 
 		box-shadow: -2rem 0 2rem 2rem rgba(0, 0, 0, 0.4);
 		position: relative;
 		transition: all 1s ease-in-out;
+	}
+
+	.mobile-collapsable p {
+		text-align:left !important;
 	}
 
 	.mobile-collapsable:after {
