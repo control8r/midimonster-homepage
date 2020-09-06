@@ -703,7 +703,18 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     border: none;
   }
 
+  header li {
+	  margin: 0 0.2rem !important;
+  }
+
 }
+
+@media (min-width: 950px) {
+	header li {
+		margin: 0 1rem !important;
+	}
+  
+  }
 
 
 
