@@ -13,6 +13,8 @@ control protocols in the entertainment industry - and lots more besides
 	.. rst-class:: button primary
 	`Get started </getStarted.html>`_
 
+.. rst-class:: hero-img
+.. image:: assets/illustrations/Midimonster_with_Devices.svg
 
 .. rst-class:: centered
 Wide range of supported protocols
