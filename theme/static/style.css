@@ -1443,16 +1443,14 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 640px) 
 
 /* INDEX.RST */
 	.section:not(.centered) {
-		/*display: grid;
+		display: grid;
 		grid-template-columns: 100%;
 		grid-template-rows: 1fr 0.5fr 0.5fr 0.4fr;
 		column-gap: 5%;
 		row-gap: 0.5rem;
-		justify-items: stretch;
-		align-items: stretch;
-		text-align: center;*/
-		display:flex;
-		flex-direction:column;
+		text-align: center;
+		/*display:flex;
+		flex-direction:column;*/
 	}
 	.section:not(.centered) img {
 		grid-row: 1;
