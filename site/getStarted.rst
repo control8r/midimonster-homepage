@@ -64,7 +64,25 @@ information on how to store and use MIDIMonster configuration files.
 		OSX
 		###
 
-		TBD
+		To use (or build) the MIDIMonster on OSX, you will need to install a few additional
+		packages using the `brew` package manager.
+
+		For a normal build containing most backends (except for some that require rather
+		large dependencies installed), that would be:
+
+		- lua
+		- openssl
+		- jack
+		- python
+
+		Using the MIDIMonster on OSX is very similar to using it on Linux: Just create
+		a new empty text file, and edit it with your favourite editor to start your
+		own configuration. Alternatively, edit some of our example configurations to your
+		liking.
+
+		To run the MIDIMonster and load a specific configuration, start `midimonster <path/to/configfile.cfg>`
+		in a console. The output will give you feedback on what the MIDIMonster is doing
+		and how it sees your configuration.
 
 .. rst-class:: free-text
 If you're still not entirely sure on how to start using the MIDIMonster, read on for some more
