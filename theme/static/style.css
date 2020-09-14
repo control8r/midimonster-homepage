@@ -950,8 +950,17 @@ footer {
 		border: none;
 		margin: 0;
 	}
+
+	#navigtion .navbar {
+		display: flex;
+		flex-direction: column;
+	}
 	#navigation .navbar p a:after {
 		display: none;
+	}
+
+	.mobile-collapsable {
+		background-color: rgba(29, 50, 71, 1);
 	}
 
 }
@@ -1113,6 +1122,14 @@ footer {
   }
   .buttons {
 	  padding: 0 !important;
+  }
+
+  #navigation {
+	background: #122131 !important;
+    border-radius: 5%;
+    padding-left: 5rem !important;
+    margin-left: -5rem;
+    left: -2rem;
   }
   
 }
