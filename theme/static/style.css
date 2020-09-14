@@ -874,6 +874,10 @@ footer {
 		box-shadow: 2rem 0 2rem rgba(0, 0, 0, 0.4);
 	}
 
+	#mavigation .mobile-collapsable:first-child {
+
+	}
+
 	#navigation .navbar {
 		padding: 0 !important;
 		display: flex;
@@ -1148,7 +1152,7 @@ footer {
 
 @media (min-width: 1440px) {
 
-	#download p, #getting-started p, #legal-notice-impressum p, #download .section:not(.centered) h2 + p {
+	#download p, #getting-started p, #legal-notice-impressum p, #download .section:not(.centered) h2 + p, .highlight-default {
 		width:70%;
 		max-width:70%;
 		margin:0 auto;
