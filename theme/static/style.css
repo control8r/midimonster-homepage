@@ -876,6 +876,9 @@ footer {
 
 	#navigation .navbar {
 		padding: 0 !important;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
 	}
 
 	#navigation .navbar p{
@@ -1131,7 +1134,7 @@ footer {
     margin-left: -5rem;
     left: -2rem;
   }
-  
+
 }
 
 @media (min-width: 1024px) {
