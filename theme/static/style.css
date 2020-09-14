@@ -874,16 +874,6 @@ footer {
 		box-shadow: 2rem 0 2rem rgba(0, 0, 0, 0.4);
 	}
 
-	#mavigation .mobile-collapsable:first-child {
-
-	}
-
-	#navigation .navbar {
-		padding: 0 !important;
-		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
-	}
 
 	#navigation .navbar p{
 		display: flex;
@@ -929,6 +919,18 @@ footer {
 		padding: 2rem !important;
 		background:rgba(29, 50, 71, 1) !important;
 		border-right: 1px solid #122131;
+	}
+
+
+	#mavigation .mobile-collapsable:first-child {
+
+	}
+
+	#navigation .navbar {
+		padding: 0 !important;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
 	}
 	.navbar p{
 		display: flex;
