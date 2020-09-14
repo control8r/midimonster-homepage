@@ -148,9 +148,9 @@ configuration and edit it to match your intended setup, which can be easier for 
 A configuration will consist of three basic section types, each of which are started by
 a header line in square brackets.
 
-  - Backend configuration sections, started by `[backend <backend-name>]`
-  - Instance configuration sections, started by `[<backend-name> <instance-name>]`
-  - Mapping sections, started by `[map]`
+- Backend configuration sections, started by `[backend <backend-name>]`
+- Instance configuration sections, started by `[<backend-name> <instance-name>]`
+- Mapping sections, started by `[map]`
 
 The next paragraphs will give some examples and go into detail on each of these sections.
 
