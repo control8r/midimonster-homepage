@@ -1057,6 +1057,11 @@ footer {
     flex-direction: column;
   }
 
+  .hero h1:after {
+	width: 8rem;
+    margin: 0;
+  }
+
   .mobile-centered, .mobile-centered *, .desktop-algn-left {
     align-items: flex-start ;
     justify-items: left ;
@@ -1076,7 +1081,6 @@ footer {
   .hero .hero-img {
     width: 70%;
     position: relative;
-    z-index: -10;
     transform: scale(1);
   }
 
@@ -1093,10 +1097,18 @@ footer {
     width: 50%;
     margin: 0 1rem;
   }
+  .buttons p:first-child {
+	  margin-right: 1rem;
+  }
   
 }
 
 @media (min-width: 1024px) {
+
+	.hero .hero-img {
+		width: 100%;
+		transform: scale(1.3);
+	  }
 
 }
 
