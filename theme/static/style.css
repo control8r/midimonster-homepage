@@ -934,6 +934,11 @@ footer {
 		position: relative;
 		padding-left:30%;
 	}
+
+	#navigation ~ .section > p + ul {
+		margin-top:0 !important;
+	}
+
 	#navigation + .section h1, #navigation + .section p{
 		position: relative;
 		padding-left:0;
