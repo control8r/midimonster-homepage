@@ -20,7 +20,7 @@ MIDIMonster v0.5
 	.. rst-class:: inline-link
 	`Read more on the GitHub release page <https://github.com/cbdevnet/midimonster/releases/tag/v0.5>`_
 
-	.. rst-class:: download-boxes
+	.. rst-class:: download-boxes no-dots
 	- Debian Linux (amd64) *.deb* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster_0.5-1_amd64.deb>`_
 	- Linux (x64 ELF) *.tgz* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster-v0.5-linux.tgz>`_
 	- OS X (Mach-O) *.tgz* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster-v0.5-osx.tgz>`_
