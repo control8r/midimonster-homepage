@@ -17,9 +17,9 @@ and any services offered via this site is
 
 	Germany
 
-	E-Mail: midimonster@fabianstumpf.de
-	
-	Homepage: `http://fabianstumpf.de <http://fabianstumpf.de>`_
+	midimonster@fabianstumpf.de
+
+	`http://fabianstumpf.de <http://fabianstumpf.de>`_
 
 For technical assistance, please create an issue or ask the community via our social media
 channels.
