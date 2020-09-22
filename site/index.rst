@@ -16,6 +16,19 @@ control protocols in the entertainment industry - and lots more besides
 .. rst-class:: hero-img
 .. image:: assets/illustrations/Midimonster_with_Devices.svg
 
+Usage examples
+###############
+
+The power of the MIDIMonster can be used to
+
+- Quickly set up an interface and translation between different protocols
+- Script and control your light show using Lua or Python
+- Use MIDI or game controllers to type, control your mouse, or trigger your cues
+- Control your video switcher and direct your stream using your favourite controllers, mapped the way you like it
+- Visualize control data of any supported protocol using any other protocol
+- Use OSC controller apps on your phone or tablet to run your show
+- Play games using a lighting console
+
 .. rst-class:: centered
 Wide range of supported protocols
 #################################
