@@ -18,15 +18,18 @@ body {
 	.section:not(.centered) > h1 {
 		grid-column: 3;
 		grid-row: 2;
+		z-index:1000;
 	}
 	.section:not(.centered) > p {
 		grid-column: 3;
 		grid-row: 3;
+		z-index:1000;
 	}
 	.section:not(.centered) > .buttons {
 		grid-column: 3;
 		grid-row: 4;
 		flex-wrap: wrap;
+		z-index:1000;
 	}
 	.section:not(.centered) > img {
 		grid-column: 2;
@@ -41,16 +44,19 @@ body {
 	.section:not(.centered):nth-child(2n) > h1 {
 		grid-column: 2;
 		grid-row: 2;
+		z-index:1000;
 	}
 	.section:not(.centered):nth-child(2n) > p, .section:not(.centered):nth-child(2n) > .text {
 		grid-column: 2;
 		grid-row: 3;
 		padding: 0 !important;
+		
 	}
 
 	.section:not(.centered):nth-child(2n) > .buttons {
 		grid-column: 2;
 		grid-row: 4;
+		z-index:1000;
 	}
 	.section:not(.centered):nth-child(2n) > img {
 		grid-column: 3;
@@ -63,8 +69,21 @@ body {
 
 
 @media (min-width:1000px) { 
-	.section.hero > img {
-		transform:scale(0.9);
+	.section:not(.centered) > img.hero-img {
+		transform: scale(0.9);  
+		top: 0% !important;
+	}
+	.section:not(.centered) > img {
+		grid-column: 2;
+		grid-row: 2 / 5; 
+		top: 5%;
+    	position: relative; 
+	}
+	.section:not(.centered):nth-child(2n) > img {
+		grid-column: 3;
+		grid-row: 2 / 5; 
+		top: 5%;
+    	position: relative; 
 	}
 
 }
@@ -129,10 +148,15 @@ body {
 	margin: 1rem auto 2.5rem auto !important;
 }
 
-#download p, #getting-started p, #legal-notice-impressum p, #download .section:not(.centered) h2 + p {
+#download p, #getting-started p, #legal-notice-impressum p, #download .section:not(.centered) h2 + p, .highlight-default, #getting-started h2, #download h2 {
 	width:80%;
 	max-width:80%;
 	margin:0 auto;
+}
+
+.highlight-default {
+	margin-top:1rem;
+	margin-bottom:1rem;
 }
 
 .section ul:not(.simple){
@@ -555,7 +579,6 @@ border-bottom-left-radius: 0;
   word-break: break-all;
 }
 .highlight pre {
-	overflow-x: scroll;
 	overflow-y:hidden;
 }
 
