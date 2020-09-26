@@ -38,7 +38,7 @@ body {
     	position: relative; 
 	}
 	.section:not(.centered) > img.hero-img {
-		transform: scale(2);  
+		transform: scale(1.6);  
 	}
 
 	.section:not(.centered):nth-child(2n) > h1 {
