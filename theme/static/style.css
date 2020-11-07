@@ -20,7 +20,7 @@ body {
 		grid-row: 2;
 		z-index:1000;
 	}
-	.section:not(.centered) > p {
+	.section:not(.centered) > p, .section:not(.centered) > .text {
 		grid-column: 3;
 		grid-row: 3;
 		z-index:1000;
@@ -870,7 +870,7 @@ footer {
     content: "";
   }
   footer {
-    margin-top: 4rem !important;
+    margin-top: 0.1rem !important;
   }
 }
 
@@ -1452,15 +1452,15 @@ footer {
   }
   
   .animation-container .moving-block .list {
-	position: relative;
-	top: 50px;
+	position: absolute;
+	top: 0;
 	padding: 0 20px;
-	
-
+	width:100%;
   }
 
   .animation-container .moving-block .list ul {
 	width: 90% !important;
+	max-width:90% !important;
   }
   
   .animation-container .moving-block .bg-dark {
@@ -1502,15 +1502,15 @@ footer {
   }
   
   @-webkit-keyframes move-down-up{
-	  0%{top:70px}
-	  50%{top:-190px}
-	  100%{top:70px}
+	  0%{top:45%}
+	  50%{top:-125%}
+	  100%{top:45%}
   }
   
   @-webkit-keyframes move-up-down{
-	  0%{top:-220px}
-	  50%{top:60px}
-	  100%{top:-220px}
+	  0%{top:-140%}
+	  50%{top:35%}
+	  100%{top:-140%}
   }
   
 
