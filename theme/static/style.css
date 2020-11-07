@@ -1368,6 +1368,141 @@ footer {
 }
 
 
+/*===================================
+======= index/USAGE EXAMPLES =======
+====================================*/
+
+#usage-examples {
+	display:flex;
+	flex-direction: column;
+	width:80%;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.matrix ul li:before{
+	height:70%;
+	border-radius: 0;
+	width: 0.2rem;
+	top: 0.3rem;
+}
+
+.matrix ul li{
+	display: grid;
+	grid-template-columns: 5% 95%;
+  	grid-template-rows: 100%;
+}
+
+@media (min-width: 800px) {
+	.matrix ul {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 100% !important;
+		width: 100% !important;
+		margin: 0 auto;
+		justify-content: center;
+	}
+
+	.matrix ul li{
+		width: 25%;
+		margin-left: 2.5rem;
+		margin-bottom: 2rem;
+	}
+}
+
+/*===================================
+======= index/USAGE EXAMPLES / animation =======
+====================================*/
+.animation-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 100px;
+	overflow: hidden;
+	margin: 3rem auto 6rem auto;
+	width: 90%;
+	justify-content: center;
+  }
+  
+  .animation-container > div{
+	margin: 10px 20px;
+  }
+  
+  .animation-container .moving-block div.box{
+	width: inherit;
+	border: 2px solid #23cb97;
+	height: 50px;
+	position: absolute;
+	border-radius: 10px;
+	z-index: 1000;
+  }
+  .animation-container .moving-block.first div.box {
+	margin: 205px 0 0;
+  }
+  .animation-container .moving-block.second div.box{
+	margin: 185px 0 0;
+  }
+ 
+  
+  .animation-container .moving-block{
+	width:250px;
+  }
+  
+  .animation-container .moving-block .list {
+	position: relative;
+	top: 50px;
+  }
+  
+  .animation-container .moving-block .bg-dark {
+	height:inherit;
+	width: inherit;
+	background: linear-gradient(0deg, rgba(18, 33, 49, 1) 0%, rgba(18, 33, 49, 0) 35%, rgba(18, 33, 49, 0) 65%, rgba(18, 33, 49, 1) 100%);
+	position: relative;
+	width: inherit;
+    height: 110px;
+  }
+
+  .animation-container .moving-block.first .bg-dark {
+	top: -190px;
+  }
+
+  .animation-container .moving-block.second .bg-dark {
+	top: -165px;
+  }
+  
+  .animation-container .list li{
+	margin: 0;
+	list-style: none;
+	padding: 0 !important;
+	
+  }
+  .animation-container .list li::before{
+	display: none;
+	
+  }
+  
+  .animation-container .list-from {
+	-webkit-animation: move-up-down 10s;
+	animation-iteration-count: infinite;
+  }
+  
+  .animation-container .list-to {
+	-webkit-animation: move-down-up 10s;
+	animation-iteration-count: infinite;
+  }
+  
+  @-webkit-keyframes move-down-up{
+	  0%{top:65px}
+	  50%{top:-60px}
+	  100%{top:65px}
+  }
+  
+  @-webkit-keyframes move-up-down{
+	  0%{top:-60px}
+	  50%{top:65px}
+	  100%{top:-60px}
+  }
+  
 
 
 
