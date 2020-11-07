@@ -1482,25 +1482,25 @@ footer {
   }
   
   .animation-container .list-from {
-	-webkit-animation: move-up-down 10s;
+	-webkit-animation: move-up-down 15s;
 	animation-iteration-count: infinite;
   }
   
   .animation-container .list-to {
-	-webkit-animation: move-down-up 10s;
+	-webkit-animation: move-down-up 15s;
 	animation-iteration-count: infinite;
   }
   
   @-webkit-keyframes move-down-up{
-	  0%{top:65px}
-	  50%{top:-60px}
-	  100%{top:65px}
+	  0%{top:170px}
+	  50%{top:-90px}
+	  100%{top:170px}
   }
   
   @-webkit-keyframes move-up-down{
-	  0%{top:-60px}
-	  50%{top:65px}
-	  100%{top:-60px}
+	  0%{top:-100px}
+	  50%{top:190px}
+	  100%{top:-100px}
   }
   
 
