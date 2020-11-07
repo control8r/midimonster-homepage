@@ -1437,37 +1437,41 @@ footer {
 	z-index: 1000;
   }
   .animation-container .moving-block.first div.box {
-	margin: 205px 0 0;
+	top: 40px;
   }
   .animation-container .moving-block.second div.box{
-	margin: 185px 0 0;
+	top: 40px;
   }
  
   
   .animation-container .moving-block{
 	width:250px;
+	position: relative;
+	padding:0;
+	height:150px;
   }
   
   .animation-container .moving-block .list {
 	position: relative;
 	top: 50px;
+	padding: 0 20px;
   }
   
   .animation-container .moving-block .bg-dark {
 	height:inherit;
 	width: inherit;
 	background: linear-gradient(0deg, rgba(18, 33, 49, 1) 0%, rgba(18, 33, 49, 0) 35%, rgba(18, 33, 49, 0) 65%, rgba(18, 33, 49, 1) 100%);
-	position: relative;
+	position: absolute;
 	width: inherit;
     height: 110px;
   }
 
   .animation-container .moving-block.first .bg-dark {
-	top: -190px;
+	top: 20px;
   }
 
   .animation-container .moving-block.second .bg-dark {
-	top: -165px;
+	top: 20px;
   }
   
   .animation-container .list li{
@@ -1492,15 +1496,15 @@ footer {
   }
   
   @-webkit-keyframes move-down-up{
-	  0%{top:170px}
-	  50%{top:-90px}
-	  100%{top:170px}
+	  0%{top:70px}
+	  50%{top:-190px}
+	  100%{top:70px}
   }
   
   @-webkit-keyframes move-up-down{
-	  0%{top:-100px}
-	  50%{top:190px}
-	  100%{top:-100px}
+	  0%{top:-220px}
+	  50%{top:60px}
+	  100%{top:-220px}
   }
   
 
