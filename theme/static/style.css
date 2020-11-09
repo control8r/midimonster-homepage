@@ -1024,10 +1024,16 @@ footer {
 ======= BODY =======
 =====================*/
 .section {
-  padding: 3rem 1rem 5rem;
+  padding: 1rem;
   overflow: hidden;
 }
 
+@media (min-width: 801px) {
+	.section {
+		padding: 3rem 1rem 5rem;
+		overflow: hidden;
+	  }
+}
 
 .flex {
   display: flex;
@@ -1393,14 +1399,27 @@ footer {
   	grid-template-rows: 100%;
 }
 
+.matrix {
+	width:110%;
+}
+
+.matrix ul {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100% !important;
+	width: 100% !important;
+	margin: 0 auto;
+	justify-content: center;
+}
+.matrix ul li{
+	width: 35%;
+	margin-left: 2.5rem;
+	margin-bottom: 2rem;
+}
+
 @media (min-width: 800px) {
-	.matrix ul {
-		display: flex;
-		flex-wrap: wrap;
-		max-width: 100% !important;
-		width: 100% !important;
-		margin: 0 auto;
-		justify-content: center;
+	.matrix {
+		width:100%;
 	}
 
 	.matrix ul li{
@@ -1413,17 +1432,40 @@ footer {
 /*===================================
 ======= index/USAGE EXAMPLES / animation =======
 ====================================*/
+
 .animation-container {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	height: 100px;
-	overflow: hidden;
-	margin: 3rem auto 6rem auto;
-	width: 90%;
-	justify-content: center;
-  }
-  
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100px;
+		overflow: hidden;
+		margin: 3rem auto 6rem auto;
+		width: 90%;
+		justify-content: center;
+}
+
+@media (min-width: 769px) {
+	.animation-container {
+		display: flex;
+		flex-direction: row;
+		width:110%;
+
+	}
+	.animation-container .moving-block{
+
+		height:150px;
+	  }
+}
+
+@media (min-width: 1000px) {
+	.animation-container {
+		display: flex;
+		flex-direction: row;
+		width:90%;
+
+	}
+}
   .animation-container > div{
 	margin: 10px 20px;
   }
@@ -1448,7 +1490,8 @@ footer {
 	width:250px;
 	position: relative;
 	padding:0;
-	height:150px;
+	height:100px;
+	overflow:hidden;
   }
   
   .animation-container .moving-block .list {
@@ -1874,4 +1917,8 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 	}
 
 
+}
+
+.no-animation {
+	-webkit-animation: none !important;
 }
