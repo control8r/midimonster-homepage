@@ -5,21 +5,23 @@ document.addEventListener("DOMContentLoaded", () => {
 	var wordX = document.getElementsByClassName("saying").item(0);
 	var wordY = document.getElementsByClassName("saying").item(1);
 	randomConnectionID = getRandomInt(animationXWords.length);
-	wordX.innerHTML = animationXWords[randomConnectionID]
-	wordY.innerHTML = animationYWords[randomConnectionID]
+	wordX.innerHTML = "<p>" + animationXWords[randomConnectionID] + "</p>"
+	wordY.innerHTML = "<p>" + animationYWords[randomConnectionID] + "</p>"
 
 	clearAnimations("list-from");
 	clearAnimations("list-to");
 
-	var listX = document.querySelector(".list-from ul");
+	var listX = document.querySelector(".list-from");
 	console.log(listX.children.length);
-	var listY = document.querySelector(".list-to ul");
-	shuffleNodes(listX);
-	shuffleNodes(listY);
+	var listY = document.querySelector(".list-to");
+	//shuffleNodes(listX);
+	//shuffleNodes(listY);
 	window.setInterval(function () {
-        //scrollToElement(listX, getRandomInt(listX.children.length))
-		//scrollToElement(listY, getRandomInt(listY.children.length))
-	}, 3000);
+		changeListPosition(listX, getRandomInt(listX.firstElementChild.children.length))
+	}, 2000);
+	window.setInterval(function () {
+		changeListPosition(listY, getRandomInt(listY.firstElementChild.children.length))
+	}, 2000);
 	
   });
 
@@ -32,15 +34,9 @@ function getRandomInt(max) {
 }
 
 
-function shuffleNodes(list) {
-	var nodes = list.children, i = 0;
-	nodes = Array.prototype.sort.call(nodes);
-	while(i < nodes.length) {
-		list.appendChild(nodes[i]);
-		++i;
-	}
-}
-
-function scrollToElement(list, itemNumber) {
-    list.children[itemNumber].scrollIntoView();
+function changeListPosition(list, itemNumber) {
+	list.querySelector("p").style = "color:#d0d2d4;";
+	list.style = "-webkit-transition: 1s ease-in-out; -moz-transition: 1s ease-in-out; -o-transition: 1s ease-in-out; transition: 1s ease-in-out;transform: translateY(-" + (list.firstElementChild.offsetHeight/list.firstElementChild.children.length*itemNumber-2*list.firstElementChild.offsetTop) + "px); "
+	list.firstElementChild.children[itemNumber].querySelector("p").style = "color:#23cb97;";
+	
 }

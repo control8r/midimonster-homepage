@@ -127,7 +127,7 @@ h4 {
   font-weight: 800;
 }
 
-p, a, h4, label, li {
+p, a, h4, label, li, .saying div {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-weight: normal;
     font-size: 1rem;
