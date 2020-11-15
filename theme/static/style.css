@@ -1379,12 +1379,18 @@ footer {
 ====================================*/
 
 #usage-examples {
-	display:flex;
-	flex-direction: column;
-	width:95%;
-	margin: 0 auto;
-	align-items: center;
+	display:none;
 }
+
+@media (min-width: 768px) {
+	#usage-examples {
+		display:flex;
+		flex-direction: column;
+		width:95%;
+		margin: 0 auto;
+		align-items: center;
+	}
+  }
 @media (min-width: 1024px) {
 	#usage-examples {
 		width:80%;
