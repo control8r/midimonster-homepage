@@ -1459,7 +1459,7 @@ footer {
 	.animation-container {
 		display: flex;
 		flex-direction: row;
-		margin: 1rem auto;
+		margin:2rem auto;
 
 	}
 	.animation-container .moving-block{
@@ -1481,7 +1481,7 @@ footer {
   }
   
   .animation-container .moving-block div.box{
-	width: inherit;
+	width: -webkit-fill-available;
 	border: 2px solid #23cb97;
 	height: 50px;
 	position: absolute;
