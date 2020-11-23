@@ -51,9 +51,9 @@ function updateUsageBlock(usageExamplesElement, usageExamplesElementHTML){
 		clearAnimations("list-from");
 		clearAnimations("list-to");
 
-		var listX = document.querySelector(".list-from");
+		var listX = document.getElementsByClassName("list-from").item(0);
 		console.log(listX.children.length);
-		var listY = document.querySelector(".list-to");
+		var listY = document.getElementsByClassName("list-to").item(0);
 		//shuffleNodes(listX);
 		//shuffleNodes(listY);
 		window.setInterval(function () {
