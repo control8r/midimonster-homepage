@@ -21,9 +21,12 @@ function getRandomInt(max) {
 
 
 function changeListPosition(list, itemNumber) {
-	list.querySelector("p").style = "color:#d0d2d4;";
-	list.style = "-webkit-transition: 1s ease-in-out; -moz-transition: 1s ease-in-out; -o-transition: 1s ease-in-out; transition: 1s ease-in-out;transform: translateY(-" + (list.firstElementChild.offsetHeight/list.firstElementChild.children.length*itemNumber-2*list.firstElementChild.offsetTop) + "px); "
-	list.firstElementChild.children[itemNumber].querySelector("p").style = "color:#23cb97;";
+	if (list.querySelector("p")) {
+			list.querySelector("p").style = "color:#d0d2d4;";
+			list.style = "-webkit-transition: 1s ease-in-out; -moz-transition: 1s ease-in-out; -o-transition: 1s ease-in-out; transition: 1s ease-in-out;transform: translateY(-" + (list.firstElementChild.offsetHeight/list.firstElementChild.children.length*itemNumber-2*list.firstElementChild.offsetTop) + "px); "
+			list.firstElementChild.children[itemNumber].querySelector("p").style = "color:#23cb97;";
+			
+	}
 	
 }
 
@@ -32,7 +35,8 @@ function insertAfter(newNode, existingNode) {
 }
 
 function updateUsageBlock(usageExamplesElement, usageExamplesElementHTML){
-	if (window.screen.width<768) {
+	if (window.screen.width<767) {
+		console.log("deleting element");
 		document.getElementById("usage-examples").parentNode.removeChild(usageExamplesElement);
 	} else {
 		if (document.getElementById("usage-examples")==null) {
