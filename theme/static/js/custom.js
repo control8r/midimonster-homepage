@@ -52,7 +52,7 @@ function updateUsageBlock(usageExamplesElement, usageExamplesElementHTML){
 		clearAnimations("list-to");
 
 		var listX = document.getElementsByClassName("list-from").item(0);
-		console.log(listX);
+		console.log(listX.firstElementChild.children.length);
 		var listY = document.getElementsByClassName("list-to").item(0);
 		//shuffleNodes(listX);
 		//shuffleNodes(listY);
