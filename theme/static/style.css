@@ -5,6 +5,18 @@ body {
   font-size: 16px; /* default */
   scroll-behavior: smooth;
 }
+
+header{
+	position: fixed !important;
+	width:100% !important;
+	z-index:9999999 !important;
+}
+div.section{
+	position: relative;
+	top:60px;
+}
+
+
 @media (min-width:701px) { 
 
 	.section:not(.centered) {
@@ -84,6 +96,10 @@ body {
 		grid-row: 2 / 5; 
 		top: 5%;
     	position: relative; 
+	}
+	header #menuToggle{
+		position: relative;
+		left:-10%
 	}
 
 }
@@ -778,12 +794,20 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   header li {
 	  margin: 0 0.2rem !important;
   }
+  header #menuToggle{
+	position: relative;
+	left:-5%
+}
 
 }
 
 @media (min-width: 950px) {
 	header li {
 		margin: 0 1rem !important;
+	}
+	header #menuToggle{
+		position: relative;
+		left:-10%
 	}
   
   }
@@ -1500,6 +1524,7 @@ footer {
   
   .animation-container .moving-block div.box{
 	width: -webkit-fill-available;
+	width: -moz-available;
 	border: 2px solid #23cb97;
 	height: 50px;
 	position: absolute;
@@ -1527,6 +1552,7 @@ footer {
 	top: 27px;
 	padding: 0 20px;
 	width:100%;
+	white-space: nowrap;
   }
 
   .animation-container .moving-block .list ul {
