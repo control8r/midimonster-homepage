@@ -21,7 +21,7 @@ function getRandomInt(max) {
 
 
 function changeListPosition(list, itemNumber) {
-	list.style = "-webkit-transition: 1s ease-in-out; -moz-transition: 1s ease-in-out; -o-transition: 1s ease-in-out; transition: 1s ease-in-out;transform: translateY(-" + (list.firstElementChild.offsetHeight/list.firstElementChild.children.length*itemNumber-2*list.firstElementChild.offsetTop) + "px); ";
+	list.style = "-webkit-transition: 2s ease-in-out; -moz-transition: 1s ease-in-out; -o-transition: 1s ease-in-out; transition: 1s ease-in-out;transform: translateY(-" + (list.firstElementChild.offsetHeight/list.firstElementChild.children.length*itemNumber-2*list.firstElementChild.offsetTop) + "px); ";
 }
 
 function insertAfter(newNode, existingNode) {
@@ -52,10 +52,10 @@ function updateUsageBlock(usageExamplesElement, usageExamplesElementHTML){
 		//shuffleNodes(listY);
 		window.setInterval(function () {
 			changeListPosition(listX, getRandomInt(listX.firstElementChild.children.length))
-		}, 2000);
+		}, 2500);
 		window.setInterval(function () {
 			changeListPosition(listY, getRandomInt(listY.firstElementChild.children.length))
-		}, 2000);
+		}, 2500);
 	}
 }
 
