@@ -30,7 +30,7 @@
 			* Lua |nbsp| Scripts
 			* Your |nbsp| keyboard
 			* Live |nbsp| streaming |nbsp| equipment
-			* Cammera |nbsp| tally
+			* Camera |nbsp| tally
 			* Moving |nbsp| lights
 			* JACK |nbsp| LV2 |nbsp| Plugins
 			* OLA
