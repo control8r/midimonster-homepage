@@ -1501,9 +1501,9 @@ footer {
   .animation-container .moving-block div.box{
 	width: -webkit-fill-available;
 	border: 2px solid #23cb97;
-	height: 50px;
+	height: 1.7em;
 	position: absolute;
-	border-radius: 10px;
+	border-radius: 0.5em;
 	z-index: 1000;
   }
   .animation-container .moving-block.first div.box {

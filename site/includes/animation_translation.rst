@@ -19,6 +19,7 @@
 			* GrandMA |nbsp| consoles
 			* ArtNet
 			* OSC |nbsp| applications
+			* Video |nbsp| switchers
 			* DMX
 			* Stage |nbsp| lighting
 			* MIDI |nbsp| synthesizers
@@ -28,7 +29,9 @@
 			* Games
 			* Lua |nbsp| Scripts
 			* Your |nbsp| keyboard
-			* Moving lights
+			* Live |nbsp| streaming |nbsp| equipment
+			* Cammera |nbsp| tally
+			* Moving |nbsp| lights
 			* JACK |nbsp| LV2 |nbsp| Plugins
 			* OLA
 			* Stage |nbsp| automation
@@ -55,8 +58,8 @@
 			* OSC |nbsp| controllers
 			* Mobile |nbsp| Apps
 			* DMX
-			* Stage |nbsp| lighting
 			* TouchOSC
+			* Switcher |nbsp| control |nbsp| panels
 			* IPads
 			* MIDI |nbsp| synthesizers
 			* sACN
@@ -66,8 +69,8 @@
 			* Lua |nbsp| Scripts
 			* Keyboards
 			* JACK |nbsp| LV2 |nbsp| Plugins
-			* Python scripting
-			* Automated sequencing
+			* Python |nbsp| scripting
+			* Automated |nbsp| sequencing
 
 		.. raw:: html
 
