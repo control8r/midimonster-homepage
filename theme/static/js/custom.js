@@ -21,7 +21,7 @@ function getRandomInt(max) {
 
 
 function changeListPosition(list, itemNumber) {
-	list.style = "-webkit-transition: 2s ease-in-out; -moz-transition: 1s ease-in-out; -o-transition: 1s ease-in-out; transition: 1s ease-in-out;transform: translateY(-" + (list.firstElementChild.offsetHeight/list.firstElementChild.children.length*itemNumber-2*list.firstElementChild.offsetTop) + "px); ";
+	list.style = "-webkit-transition: 2s ease-in-out; -moz-transition: 1s ease-in-out; -o-transition: 1s ease-in-out; transition: 1s ease-in-out;transform: translateY(-" + (list.firstElementChild.offsetHeight/list.firstElementChild.children.length*itemNumber-1*list.firstElementChild.offsetTop) + "px); ";
 }
 
 function insertAfter(newNode, existingNode) {
@@ -64,3 +64,15 @@ var elems = document.querySelectorAll(".widget.hover");
 [].forEach.call(elems, function(el) {
     el.classList.remove("hover");
 });
+
+
+
+function openNavigation() {
+	document.getElementsByClassName("navbar").item(0).style.width = "250px";
+	document.getElementsByClassName("getStarted-content").item(0).style.marginLeft = "250px";
+  }
+  
+function closeNavigation() {
+document.getElementsByClassName("navbar").item(0).style.width = "0";
+document.getElementsByClassName("getStarted-content").item(0).style.marginLeft = "0";
+}

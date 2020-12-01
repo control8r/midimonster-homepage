@@ -1963,7 +1963,7 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 		display: none;
 	}
 
-	.mobile-collapsable h1 {
+	.mobile-collapsable h2 {
 		font-size: 2rem;
 	}
 
@@ -1972,4 +1972,71 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 
 .no-animation {
 	-webkit-animation: none !important;
+}
+
+
+/* SECTION WITH SIDEBAR */
+.section-with-sidebar > h1 {
+	display: none;
+}
+
+.section-with-sidebar .section, .section-with-sidebar.sidebar p {
+	display: flex;
+	flex-direction: column;
+}
+
+.section-with-sidebar.sidebar {
+	width:200px;
+	float:left;
+	position: sticky;
+}
+
+.section-with-sidebar, .section-with-sidebar .section {
+	background-color: #122131 !important;
+}
+
+.section-with-sidebar .section {
+	padding-top: 5rem;
+	padding-bottom: 0rem;
+}
+.section-with-sidebar .section:first-of-type {
+	padding-top: 0rem;
+}
+.section-with-sidebar .section:last-of-type {
+	padding-bottom: 5rem;
+}
+
+.section-with-sidebar.sidebar, .section-with-sidebar .links {
+	margin-top: 10%;
+	margin-bottom: 100px;
+}
+
+.section-with-sidebar .links {
+	border-right: 1px solid #fff;
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 700px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 700px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 700px),
+only screen and (        min-device-pixel-ratio: 2)      and (max-width: 700px),
+only screen and (                min-resolution: 192dpi) and (max-width: 700px),
+only screen and (                min-resolution: 2dppx)  and (max-width: 700px) { 
+
+	.section-with-sidebar.sidebar {
+		display: none !important;
+	}
+
+	.section-with-sidebar .section{
+		padding-bottom: 4rem !important;
+		padding-top:0 !important;
+	}
+	.section-with-sidebar .section h2{
+		font-size: 1.3rem;
+	}
+	.section-with-sidebar.content {
+		padding: 0  0 8rem 0!important;
+	}
+
 }

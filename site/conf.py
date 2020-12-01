@@ -11,3 +11,4 @@ exclude_patterns = []
 html_theme = 'theme'
 html_theme_path = ['../']
 html_static_path = ['assets']
+html_sidebars = {'**': ['localtoc.html']}

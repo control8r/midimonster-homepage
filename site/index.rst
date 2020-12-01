@@ -80,8 +80,10 @@ a feeling of what is possible.
 	.. rst-class:: button secondary
 	`Example configurations <https://github.com/cbdevnet/midimonster/tree/master/configs>`_
 
+
 	.. rst-class:: button primary
 	`Get started </getStarted.html>`_
+	
 
 .. image:: assets/illustrations/Puzzle_configuration.svg
 
