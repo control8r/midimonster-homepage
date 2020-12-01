@@ -1,6 +1,3 @@
-.. |nbsp| unicode:: 0xA0 
-	:trim:
-
 .. container:: animation-container
 
 	.. container:: saying
@@ -16,25 +13,26 @@
 
 		.. container:: list list-from
 
-			* GrandMA |nbsp| consoles
+			* GrandMA consoles
 			* ArtNet
-			* OSC |nbsp| applications
-			* Video |nbsp| switchers
+			* OSC applications
+			* Video switchers
 			* DMX
-			* Stage |nbsp| lighting
-			* MIDI |nbsp| synthesizers
-			* Pixel |nbsp| Strips
+			* Stage lighting
+			* MIDI synthesizers
+			* Pixel Strips
 			* sACN
-			* MIDI |nbsp| controllers
+			* MIDI controllers
 			* Games
-			* Lua |nbsp| Scripts
-			* Your |nbsp| keyboard
-			* Live |nbsp| streaming |nbsp| equipment
-			* Camera |nbsp| tally
-			* Moving |nbsp| lights
-			* JACK |nbsp| LV2 |nbsp| Plugins
+			* Lua Scripts
+			* Your keyboard
+			* PTZ Cameras
+			* Live streaming equipment
+			* Camera tally
+			* Moving lights
+			* JACK LV2 Plugins
 			* OLA
-			* Stage |nbsp| automation
+			* Stage automation
 			* Mixers
 
 		.. raw:: html
@@ -53,24 +51,24 @@
 
 		.. container:: list list-to
 
-			* GrandMA |nbsp| consoles
+			* GrandMA consoles
 			* ArtNet
-			* OSC |nbsp| controllers
-			* Mobile |nbsp| Apps
+			* OSC controllers
+			* Mobile Apps
 			* DMX
 			* TouchOSC
-			* Switcher |nbsp| control |nbsp| panels
+			* Switcher control panels
 			* IPads
-			* MIDI |nbsp| synthesizers
+			* MIDI synthesizers
 			* sACN
-			* MIDI |nbsp| controllers
+			* MIDI controllers
 			* Gamepads
 			* RTPMIDI
-			* Lua |nbsp| Scripts
+			* Lua Scripts
 			* Keyboards
-			* JACK |nbsp| LV2 |nbsp| Plugins
-			* Python |nbsp| scripting
-			* Automated |nbsp| sequencing
+			* JACK LV2 Plugins
+			* Python scripting
+			* Automated sequencing
 
 		.. raw:: html
 
