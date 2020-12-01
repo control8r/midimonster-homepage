@@ -15,6 +15,9 @@ div.section{
 	position: relative;
 	top:60px;
 }
+footer {
+	top: 70px;
+}
 
 
 @media (min-width:701px) { 
@@ -135,7 +138,7 @@ div.section{
 	width:40%;
 	margin: 0 auto 2rem auto;
 	padding: 2rem !important;
-	background-color: #122131 !important;
+	background-color: rgba(29, 50, 71, 1) !important;
 	border-radius: 0.5rem;
 }
 .address-info p {
@@ -147,6 +150,9 @@ div.section{
 #legal-notice-impressum > p + p {
 	margin-bottom: 2rem !important;
 }
+#legal-notice-impressum {
+	background-color:#122131 !important;
+}
 
 
 /*====================
@@ -156,8 +162,12 @@ div.section{
 	text-align: center;
 }
 
-#download > h1, #getting-started > h1, #legal-notice-impressum > h1{
-	margin: 4rem auto 0 auto !important;
+#legal-notice-impressum > h1{
+	margin: 2rem auto 2rem auto !important;
+}
+
+#download > h1, #getting-started > h1{
+	margin: 4rem auto 1rem auto !important;
 }
 
 #download > p:not(.free-text), #getting-started > p:not(.free-text), #legal-notice-impressum > p:not(.free-text) {
@@ -181,9 +191,12 @@ div.section{
     margin: 1rem auto;
 }
 
-.section ul.simple li:before{
-	left:0;
+
+
+.section ul.simple{
+	text-align: left;
 }
+
 
 header ul li:before, ul.no-dots li:before {
 	display: none;
@@ -257,6 +270,8 @@ li {
 
 .download-boxes li > p {
 	color: #fff;
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 
 
@@ -295,6 +310,7 @@ li {
 		flex-direction: row;
 		flex-flow: wrap;
 		align-content: start;
+		justify-content: center;
 	}
 	.download-boxes li {
 		/*background-color: #122131;*/
@@ -704,6 +720,7 @@ header .menu-icon {
   padding: 28px 20px;
   position: relative;
   user-select: none;
+  right: 30px;
 }
 
 header .menu-icon .navicon {
@@ -741,10 +758,10 @@ header .menu-btn {
 }
 
 header .menu-btn:checked ~ .menu {
-  max-height: 30rem;
+	max-height: 30rem;
     position: absolute;
-    top: 5.2rem;
-    right: 0rem;
+    top: 5.6rem;
+    right: 30px;
     display: block;
 }
 
@@ -972,7 +989,9 @@ footer {
 		z-index: 100;
 	}
   }
-
+.section > ul p{
+	padding-left:5%;
+}
 @media (min-width: 800px) {
 	#navigation{
 		max-width: 25%;
@@ -1009,10 +1028,6 @@ footer {
 		float:right;
 	}
 
-	.section > ul p{
-		padding-left:5%;
-	}
-
 	#navigation ~ .section > p + ul {
 		margin-top:0 !important;
 	}
@@ -1039,6 +1054,9 @@ footer {
 
 	.mobile-collapsable {
 		background-color: #122131 !important;
+	}
+	.section > ul p{
+		padding-left:0;
 	}
 
 }
@@ -1213,6 +1231,7 @@ footer {
     left: 0;
   }
 
+
 }
 
 @media (min-width: 1024px) {
@@ -1246,6 +1265,7 @@ footer {
 	left: -2rem;
 	}
 
+
 }
 
 @media (min-width: 1440px) {
@@ -1257,11 +1277,15 @@ footer {
 	}
 
 	.section ul{
-		width: 60%;
-		max-width: 70%;
+		width: 80%;
+		max-width: 100%;
 		margin: 1rem auto;
 	}
 
+}
+
+ul li p {
+	margin-left: 1.5rem !important;
 }
 
 
@@ -1880,9 +1904,11 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 	}
 	.download-boxes li {
 		background-color: rgba(29, 50, 71, 1) !important;
-		width:28%;
+		width:70%;
 		margin: 0.5rem;
 	}
+
+	
 	#download p, #getting-started p, #legal-notice-impressum p {
 		width: 95%;
 		margin: 0 auto;
@@ -1966,6 +1992,32 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 	.mobile-collapsable h2 {
 		font-size: 2rem;
 	}
+	.section-with-sidebar.sidebar {
+		display: none !important;
+	}
+
+	.section-with-sidebar .section{
+		padding-bottom: 4rem !important;
+		padding-top:0 !important;
+		top: 0;
+	}
+	.section-with-sidebar .section h2{
+		font-size: 1.3rem;
+		line-height: 1.5rem;
+		padding-bottom: 1rem;
+	}
+	.section-with-sidebar.content {
+		padding: 0  0 8rem 0!important;
+	}
+
+	#getting-started ~ footer {
+		top:0;
+	}
+
+	/* LEGAL.RST */
+	.address-info {
+		width:70%;
+	}
 
 
 }
@@ -2015,28 +2067,3 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 	border-right: 1px solid #fff;
 }
 
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 700px),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 700px),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 700px),
-only screen and (        min-device-pixel-ratio: 2)      and (max-width: 700px),
-only screen and (                min-resolution: 192dpi) and (max-width: 700px),
-only screen and (                min-resolution: 2dppx)  and (max-width: 700px) { 
-
-	.section-with-sidebar.sidebar {
-		display: none !important;
-	}
-
-	.section-with-sidebar .section{
-		padding-bottom: 4rem !important;
-		padding-top:0 !important;
-	}
-	.section-with-sidebar .section h2{
-		font-size: 1.3rem;
-	}
-	.section-with-sidebar.content {
-		padding: 0  0 8rem 0!important;
-	}
-
-}

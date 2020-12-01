@@ -252,6 +252,7 @@ header li.active a{
 @media (min-width: 767px) {
 	.modules .module-card h3{
 		text-align: center;
+		margin: 1rem auto;
 	}
 	.modules .module-card p, .modules .module-card a{
 		text-align: center;
@@ -454,8 +455,15 @@ footer span {
   }
 }
 
-.code, .highlight {
+.code, .highlight, cite {
   font-family: "Courier New", Courier, monospace;
+}
+
+cite {
+    background: rgb(35 203 151 / 25%);
+    padding: 0.1rem 0.3rem;
+	border-radius: 0.3rem;
+	color: #fff;
 }
 
 .highlight .gp {
@@ -468,3 +476,15 @@ footer span {
 	color: #fff;
 }
 
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 700px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 700px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 700px),
+only screen and (        min-device-pixel-ratio: 2)      and (max-width: 700px),
+only screen and (                min-resolution: 192dpi) and (max-width: 700px),
+only screen and (                min-resolution: 2dppx)  and (max-width: 700px) { 
+	h1 {
+		font-size: 2.5rem;
+	}
+	
+}

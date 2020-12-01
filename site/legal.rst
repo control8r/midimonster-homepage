@@ -21,5 +21,5 @@ and any services offered via this site is
 
 	`http://fabianstumpf.de <http://fabianstumpf.de>`_
 
-For technical assistance, please create an issue or ask the community via our social media
-channels.
+For technical assistance, please `create an issue <https://github.com/cbdevnet/midimonster/issues>`_ or ask the community via our social media
+channels (footer).
