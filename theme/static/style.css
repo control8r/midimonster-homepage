@@ -2132,13 +2132,14 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
     padding: 0;
 }
 .flying-news-block h1 {
-	font-size: 1.2rem;
-	line-height: 1.5;
+	font-size: 1rem;
+    line-height: 1.7;
 	text-transform: uppercase;
 	color: #fff;
 	font-weight: 800;
 	background-color: #1EB0FC;
 	border-radius: 3rem;
 	padding: 0.2rem 1rem !important;
-    margin: 0.5rem !important;
+	margin: 0.5rem !important;
+	white-space: nowrap;
 }
