@@ -1235,6 +1235,14 @@ footer {
 	  padding: 0 !important;
   }
 
+
+  .button:first-child:not(.info-button):first-child {
+    margin-right: inherit;
+}
+.button:not(.info-button) {
+    margin-right: 1rem;
+}
+
   #navigation {
 	background: rgba(29, 50, 71, 1) !important;
     border-radius: 5%;
