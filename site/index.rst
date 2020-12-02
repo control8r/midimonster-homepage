@@ -38,7 +38,7 @@ Wide range of supported protocols
 #################################
 
 Mix and match the protocols relevant to your use-case, and translate seamlessly
-between them.
+between them. Almost all protocols can be used both for control input as well as output.
 
 .. container:: modules
 
@@ -51,6 +51,7 @@ between them.
 	.. include:: backends/openpixelcontrol_card.rst
 	.. include:: backends/ola_card.rst
 	.. include:: backends/input_card.rst
+	.. include:: backends/visca_card.rst
 	.. include:: backends/jack_card.rst
 
 .. rst-class:: centered
@@ -80,10 +81,8 @@ a feeling of what is possible.
 	.. rst-class:: button secondary
 	`Example configurations <https://github.com/cbdevnet/midimonster/tree/master/configs>`_
 
-
 	.. rst-class:: button primary
 	`Get started </getStarted.html>`_
-	
 
 .. image:: assets/illustrations/Puzzle_configuration.svg
 
