@@ -2111,3 +2111,34 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 	padding-bottom: 1rem !important;
 }
 
+
+
+.flying-news-block {
+	display: flex !important;
+    margin: 0 auto;
+    text-align: center;
+	justify-content: center;
+	position: absolute !important;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top:90px !important;
+	text-align: center;
+	background-color: #142331;
+	border-radius: 3rem;
+    max-width: 70%;
+    height: 50px;
+    padding: 0;
+}
+.flying-news-block h1 {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 800;
+	background-color: #1EB0FC;
+	border-radius: 3rem;
+	padding: 0.2rem 1rem !important;
+    margin: 0.5rem !important;
+}

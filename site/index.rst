@@ -118,3 +118,13 @@ on how you can help in developing, promoting and growing this open source projec
 
 	.. rst-class:: button secondary
 	`How to contribute <https://kb.midimonster.net/dev/Contributing.html>`_
+
+
+
+.. rst-class:: flying-news-block
+New release
+################
+
+In new release we fixed a number of significant issues. 
+
+`More <https://webirc.hackint.org/#irc://irc.hackint.org/#midimonster>`_
