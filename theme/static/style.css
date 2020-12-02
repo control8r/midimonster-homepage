@@ -1564,7 +1564,7 @@ ul li p {
 		display: flex;
 		flex-direction: row;
 		width:90%;
-
+		margin-top:0;
 	}
 }
   .animation-container > div{
