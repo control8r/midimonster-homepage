@@ -127,7 +127,7 @@ h4 {
   font-weight: 800;
 }
 
-p, a, h4, label, li, .saying div {
+p, a, h4, label, li, .saying div, .free-text {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-weight: normal;
     font-size: 1rem;
@@ -141,7 +141,7 @@ a.reference {
 	color: #23cb97;
 }
 
-p, li {
+p, li, .free-text {
   color: #d0d2d4;
 }
 

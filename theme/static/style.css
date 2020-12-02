@@ -193,8 +193,19 @@ footer {
 
 
 
-.section ul.simple{
+ul.simple{
 	text-align: left;
+}
+
+ul.simple li{
+	width: 80%;
+	max-width:80%;
+	margin: 0 auto;
+
+}
+ul.simple li::before{
+	left: -1rem !important;
+	
 }
 
 
@@ -1808,9 +1819,10 @@ table th p {
 }
 
 .free-text {
-	margin: 2rem auto 2rem auto !important;
+	margin: 1rem auto 3rem auto !important;
 	padding-top: 1rem;
 	position: relative;
+	text-align: center;
 }
 
 .free-text:before {
