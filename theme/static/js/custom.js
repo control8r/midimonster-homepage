@@ -3,10 +3,11 @@ var animationYWords = ["using", "to"]
 
 document.addEventListener("DOMContentLoaded", () => {
 	var usageExamplesElement = document.getElementById("usage-examples");
-	var usageExamplesElementHTML = usageExamplesElement.cloneNode(true);
-	updateUsageBlock(usageExamplesElement, usageExamplesElementHTML);
+	var usageExamplesElementAnimation = document.getElementsByClassName("animation-container").item(0);
+	var usageExamplesElementAnimationHTML = usageExamplesElementAnimation.cloneNode(true);
+	updateUsageBlock(usageExamplesElementAnimation, usageExamplesElementAnimationHTML);
 	window.addEventListener('resize', ()=> {
-		updateUsageBlock(usageExamplesElement, usageExamplesElementHTML);
+		updateUsageBlock(usageExamplesElementAnimation, usageExamplesElementAnimationHTML);
 	});
 
   });
@@ -21,42 +22,45 @@ function getRandomInt(max) {
 
 
 function changeListPosition(list, itemNumber) {
-	list.style = "-webkit-transition: 2s ease-in-out; -moz-transition: 1s ease-in-out; -o-transition: 1s ease-in-out; transition: 1s ease-in-out;transform: translateY(-" + (list.firstElementChild.offsetHeight/list.firstElementChild.children.length*itemNumber-1*list.firstElementChild.offsetTop) + "px); ";
+	list.style = "-webkit-transition: 2s ease-in-out; -moz-transition: 1s ease-in-out; -o-transition: 1s ease-in-out; transition: 1s ease-in-out;transform: translateY(-" + (list.firstElementChild.offsetHeight/list.firstElementChild.children.length*itemNumber-2*list.firstElementChild.offsetTop) + "px); ";
 }
 
 function insertAfter(newNode, existingNode) {
     existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
 }
 
-function updateUsageBlock(usageExamplesElement, usageExamplesElementHTML){
-	if (window.screen.width<767) {
-		console.log("deleting element");
-		document.getElementById("usage-examples").parentNode.removeChild(usageExamplesElement);
-	} else {
-		if (document.getElementById("usage-examples")==null) {
-			insertAfter(usageExamplesElementHTML, document.getElementById("multi-protocol-translation-software"));
+function updateUsageBlock(usageExamplesElementAnimation, usageExamplesElementAnimationHTML){
+	if (document.getElementById("usage-examples")) {
+		if (window.screen.width<767) {
+			console.log("deleting animation");
+			document.getElementById("usage-examples").removeChild(usageExamplesElementAnimation);
+		} else {
+			if (document.getElementById("usage-examples")==null) {
+				insertAfter(usageExamplesElementAnimationHTML, document.getElementById("multi-protocol-translation-software"));
+			}
+			var wordX = document.getElementsByClassName("saying").item(0);
+			var wordY = document.getElementsByClassName("saying").item(1);
+			randomConnectionID = getRandomInt(animationXWords.length);
+			wordX.innerHTML = "<p>" + animationXWords[randomConnectionID] + "</p>"
+			wordY.innerHTML = "<p>" + animationYWords[randomConnectionID] + "</p>"
+	
+			clearAnimations("list-from");
+			clearAnimations("list-to");
+	
+			var listX = document.getElementsByClassName("list-from").item(0);
+			console.log(listX.firstElementChild.children.length);
+			var listY = document.getElementsByClassName("list-to").item(0);
+			//shuffleNodes(listX);
+			//shuffleNodes(listY);
+			window.setInterval(function () {
+				changeListPosition(listX, getRandomInt(listX.firstElementChild.children.length))
+			}, 2500);
+			window.setInterval(function () {
+				changeListPosition(listY, getRandomInt(listY.firstElementChild.children.length))
+			}, 2500);
 		}
-		var wordX = document.getElementsByClassName("saying").item(0);
-		var wordY = document.getElementsByClassName("saying").item(1);
-		randomConnectionID = getRandomInt(animationXWords.length);
-		wordX.innerHTML = "<p>" + animationXWords[randomConnectionID] + "</p>"
-		wordY.innerHTML = "<p>" + animationYWords[randomConnectionID] + "</p>"
-
-		clearAnimations("list-from");
-		clearAnimations("list-to");
-
-		var listX = document.getElementsByClassName("list-from").item(0);
-		console.log(listX.firstElementChild.children.length);
-		var listY = document.getElementsByClassName("list-to").item(0);
-		//shuffleNodes(listX);
-		//shuffleNodes(listY);
-		window.setInterval(function () {
-			changeListPosition(listX, getRandomInt(listX.firstElementChild.children.length))
-		}, 2500);
-		window.setInterval(function () {
-			changeListPosition(listY, getRandomInt(listY.firstElementChild.children.length))
-		}, 2500);
 	}
+	
 }
 
 var elems = document.querySelectorAll(".widget.hover");

@@ -1455,17 +1455,31 @@ ul li p {
 ======= index/USAGE EXAMPLES =======
 ====================================*/
 
-#usage-examples {
+#usage-examples .animation-container {
 	display: none;
 }
 
+#usage-examples {
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	width:95%;
+	margin: 0 auto;
+}
+
+#usage-exampls .matrix {
+	margin-top: 1rem;
+}
+
+#usage-examples > h1 {
+	margin-bottom:0;
+	margin-top: 1rem;
+}
+
 @media (min-width: 767px) {
-	#usage-examples {
-		display:flex;
-		flex-direction: column;
-		width:95%;
-		margin: 0 auto;
-		align-items: center;
+	#usage-examples .animation-container {
+		display: flex;
+		flex-direction: row;
 	}
   }
 @media (min-width: 1024px) {
@@ -1561,16 +1575,16 @@ ul li p {
 	width: -webkit-fill-available;
 	width: -moz-available;
 	border: 2px solid #23cb97;
-	height: 1.7em;
+	height: 3rem;
 	position: absolute;
 	border-radius: 0.5em;
 	z-index: 1000;
   }
   .animation-container .moving-block.first div.box {
-	top: 20px;
+	top: 1rem;
   }
   .animation-container .moving-block.second div.box{
-	top: 20px;
+	top: 1rem;
   }
  
   
@@ -1584,8 +1598,8 @@ ul li p {
   
   .animation-container .moving-block .list {
 	position: absolute;
-	top: 27px;
-	padding: 0 20px;
+	top: 1.25rem;
+	padding: 0 20px 0 0;
 	width:100%;
 	white-space: nowrap;
   }
