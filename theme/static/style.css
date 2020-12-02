@@ -1508,7 +1508,7 @@ ul li p {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 100% !important;
-	width: 100% !important;
+	width: 90% !important;
 	margin: 0 auto;
 	justify-content: center;
 }
