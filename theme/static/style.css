@@ -1564,7 +1564,7 @@ ul li p {
 		display: flex;
 		flex-direction: row;
 		width:90%;
-		margin-top:0;
+		
 	}
 }
   .animation-container > div{
@@ -1607,6 +1607,7 @@ ul li p {
   .animation-container .moving-block .list ul {
 	width: 90% !important;
 	max-width:90% !important;
+	margin-top:0;
   }
   
   .animation-container .moving-block .bg-dark {
