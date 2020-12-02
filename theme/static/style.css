@@ -1627,7 +1627,7 @@ ul li p {
 	margin: 0;
 	list-style: none;
 	padding: 0 !important;
-	line-height: 2.5;
+	line-height: 2.5rem;
 	
   }
   .animation-container .list li::before{
