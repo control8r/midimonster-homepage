@@ -2070,6 +2070,7 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 	width:200px;
 	float:left;
 	position: sticky;
+	position: -webkit-sticky;
 }
 
 .section-with-sidebar, .section-with-sidebar .section {
