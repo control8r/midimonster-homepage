@@ -193,8 +193,19 @@ footer {
 
 
 
-.section ul.simple{
+ul.simple{
 	text-align: left;
+}
+
+ul.simple li{
+	width: 80%;
+	max-width:80%;
+	margin: 0 auto;
+
+}
+ul.simple li::before{
+	left: -1rem !important;
+	
 }
 
 
@@ -315,14 +326,14 @@ li {
 	.download-boxes li {
 		/*background-color: #122131;*/
 		background-color:rgba(29, 50, 71, 1) ;
-		margin: 0.5rem;
+		margin: 0.5rem !important;
 		border-radius: 1.5rem;
 		padding: 0.8rem 1rem;
 		box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
 		display: flex;
 		flex-direction: column;
 		height: fit-content;
-		width: 150px;
+		width: 150px !important;
 		height:130px;
 	}
 	
@@ -1224,6 +1235,14 @@ footer {
 	  padding: 0 !important;
   }
 
+
+  .button:first-child:not(.info-button):first-child {
+    margin-right: inherit;
+}
+.button:not(.info-button) {
+    margin-right: 1rem;
+}
+
   #navigation {
 	background: rgba(29, 50, 71, 1) !important;
     border-radius: 5%;
@@ -1298,7 +1317,6 @@ ul li p {
 }
 
 .button a{
-  font-weight: 900;
   letter-spacing: 0.05rem;
   padding: 0.5rem 2rem;
   border-radius: 2rem;
@@ -1444,17 +1462,31 @@ ul li p {
 ======= index/USAGE EXAMPLES =======
 ====================================*/
 
-#usage-examples {
+#usage-examples .animation-container {
 	display: none;
 }
 
+#usage-examples {
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	width:95%;
+	margin: 0 auto;
+}
+
+#usage-exampls .matrix {
+	margin-top: 1rem;
+}
+
+#usage-examples > h1 {
+	margin-bottom:0;
+	margin-top: 1rem;
+}
+
 @media (min-width: 767px) {
-	#usage-examples {
-		display:flex;
-		flex-direction: column;
-		width:95%;
-		margin: 0 auto;
-		align-items: center;
+	#usage-examples .animation-container {
+		display: flex;
+		flex-direction: row;
 	}
   }
 @media (min-width: 1024px) {
@@ -1483,7 +1515,7 @@ ul li p {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 100% !important;
-	width: 100% !important;
+	width: 90% !important;
 	margin: 0 auto;
 	justify-content: center;
 }
@@ -1539,7 +1571,7 @@ ul li p {
 		display: flex;
 		flex-direction: row;
 		width:90%;
-
+		
 	}
 }
   .animation-container > div{
@@ -1550,16 +1582,16 @@ ul li p {
 	width: -webkit-fill-available;
 	width: -moz-available;
 	border: 2px solid #23cb97;
-	height: 1.7em;
+	height: 3rem;
 	position: absolute;
 	border-radius: 0.5em;
 	z-index: 1000;
   }
   .animation-container .moving-block.first div.box {
-	top: 20px;
+	top: 1rem;
   }
   .animation-container .moving-block.second div.box{
-	top: 20px;
+	top: 1rem;
   }
  
   
@@ -1573,8 +1605,8 @@ ul li p {
   
   .animation-container .moving-block .list {
 	position: absolute;
-	top: 27px;
-	padding: 0 20px;
+	top: 1.25rem;
+	padding: 0 20px 0 0;
 	width:100%;
 	white-space: nowrap;
   }
@@ -1582,6 +1614,7 @@ ul li p {
   .animation-container .moving-block .list ul {
 	width: 90% !important;
 	max-width:90% !important;
+	margin-top:0;
   }
   
   .animation-container .moving-block .bg-dark {
@@ -1602,6 +1635,8 @@ ul li p {
 	margin: 0;
 	list-style: none;
 	padding: 0 !important;
+	line-height: 2.5rem;
+	margin-bottom: 0.2rem;
 	
   }
   .animation-container .list li::before{
@@ -1808,9 +1843,10 @@ table th p {
 }
 
 .free-text {
-	margin: 2rem auto 2rem auto !important;
+	margin: 1rem auto 3rem auto !important;
 	padding-top: 1rem;
 	position: relative;
+	text-align: center;
 }
 
 .free-text:before {
@@ -2041,6 +2077,7 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 	width:200px;
 	float:left;
 	position: sticky;
+	position: -webkit-sticky;
 }
 
 .section-with-sidebar, .section-with-sidebar .section {
@@ -2074,3 +2111,35 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 	padding-bottom: 1rem !important;
 }
 
+
+
+.flying-news-block {
+	display: flex !important;
+    margin: 0 auto;
+    text-align: center;
+	justify-content: center;
+	position: absolute !important;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top:90px !important;
+	text-align: center;
+	background-color: #142331;
+	border-radius: 3rem;
+    max-width: 70%;
+    height: 50px;
+    padding: 0;
+}
+.flying-news-block h1 {
+	font-size: 1rem;
+    line-height: 1.7;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 800;
+	background-color: #1EB0FC;
+	border-radius: 3rem;
+	padding: 0.2rem 1rem !important;
+	margin: 0.5rem !important;
+	white-space: nowrap;
+}
