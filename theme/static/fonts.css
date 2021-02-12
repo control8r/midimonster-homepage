@@ -17,7 +17,13 @@
 
 
 
-
+::-moz-selection { 
+  background: rgb(35 203 151 / 100%); 
+  color: #fff;
+}
+::selection { 
+  background: rgb(35 203 151 / 100%); 
+  color: #fff; }
 
 /*====================
 ======= ICONS =======
