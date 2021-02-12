@@ -5,11 +5,8 @@
 .. rst-class:: error-page-img
 .. image:: assets/midimonster-logo.svg	
 
-.. rst-class:: h1
-404
-
 .. rst-class:: error-page-inside centered
-There was a problem serving your request
+Page not found
 ########################################
 
 We were unable to find the content for the current URL. It is possible that the link that sent you here has some characters missing.
