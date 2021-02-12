@@ -2143,3 +2143,17 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 	margin: 0.5rem !important;
 	white-space: nowrap;
 }
+
+
+/* ==================== */
+/*   404 - Error page   */
+/* ==================== */
+
+.error-page {
+	display: flex;
+	flex-direction: vertical;
+	background-image: url("asstes/illustrations/404-MilkyWay.svg");
+	background-size: contain;
+	width:100%;
+	
+}

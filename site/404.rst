@@ -1,0 +1,16 @@
+.. container:: error-page
+
+	.. rst-class:: hero-img
+	.. image:: assets/illustrations/404-MilkyWay.svg
+
+	404
+	***
+
+	There was a problem serving your request
+	========================================
+
+	We were unable to find the content for the current URL. It is possible that the link that sent you here has some characters missing.
+
+	.. rst-class:: button primary
+	`Back to homepage </index.html>`_
+
