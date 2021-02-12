@@ -2172,7 +2172,7 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 
 header + .error-page-inside {
 	top: 100px !important;
-	background-image: url(_static/icons/404-MilkyWay.svg);
+	background-image: url(_static/icons/404-milkyway.svg);
 	background-size: 90%;
     background-repeat: repeat-x;
 
