@@ -2150,11 +2150,9 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 /* ==================== */
 .error-page-img {
 	width: 30%;
+	background-color:#122131;
 }
-
 .error-page-inside {
-	background-image: url("asstes/illustrations/404-MilkyWay.svg");
-	background-size: contain;
 	display: flex !important;
 	flex-direction: column;
 	top: 0 !important;
@@ -2174,6 +2172,10 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 
 header + .error-page-inside {
 	top: 100px !important;
+	background-image: url("illustrations/404-MilkyWay.svg");
+	background-size: 90%;
+    background-repeat: repeat-x;
+
 }
 
 .error-page-inside:last-child {
