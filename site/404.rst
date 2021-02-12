@@ -1,14 +1,18 @@
-.. container:: error-page
+.. container:: error-page section
 
+	.. container:: error-page-inside
 
-	404
-	***
+		.. rst-class:: error-page-img
+		.. image:: assets/midimonster-logo.svg	
 
-	There was a problem serving your request
-	========================================
+		404
+		***
 
-	We were unable to find the content for the current URL. It is possible that the link that sent you here has some characters missing.
+		There was a problem serving your request
+		========================================
 
-	.. rst-class:: button primary
-	`Back to homepage </index.html>`_
+		We were unable to find the content for the current URL. It is possible that the link that sent you here has some characters missing.
+
+		.. rst-class:: button primary
+		`Back to homepage </index.html>`_
 
