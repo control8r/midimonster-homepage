@@ -1,13 +1,13 @@
-.. container:: error-page section
+.. rst-class:: error-page
 
 	.. container:: error-page-inside centered
 
 		.. rst-class:: error-page-img
 		.. image:: assets/midimonster-logo.svg	
 
-		.. rst-class:: hero
+		***
 		404
-		###
+		***
 
 		There was a problem serving your request
 		########################################

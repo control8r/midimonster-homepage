@@ -2156,10 +2156,18 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 	display: block !important;
 }
 
+.error-page-img {
+	width: 30%;
+}
+
 .error-page-inside {
 	display: flex;
 	flex-direction: column;
 	width: 70%;
 	margin: 0 auto;
 	align-items: center;
+}
+
+.error-page-inside .button {
+	margin: 0 auto !important;
 }
