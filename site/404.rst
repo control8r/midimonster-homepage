@@ -1,15 +1,16 @@
 .. container:: error-page section
 
-	.. container:: error-page-inside
+	.. container:: error-page-inside centered
 
 		.. rst-class:: error-page-img
 		.. image:: assets/midimonster-logo.svg	
 
+		.. rst-class:: hero
 		404
-		***
+		###
 
 		There was a problem serving your request
-		========================================
+		########################################
 
 		We were unable to find the content for the current URL. It is possible that the link that sent you here has some characters missing.
 
