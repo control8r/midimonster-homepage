@@ -2148,26 +2148,22 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 /* ==================== */
 /*   404 - Error page   */
 /* ==================== */
-
-.error-page {
-	background-image: url("asstes/illustrations/404-MilkyWay.svg");
-	background-size: contain;
-	width:100%;
-	display: block !important;
-}
-
 .error-page-img {
-	width: 30%;
+	width: 40%;
 }
 
 .error-page-inside {
-	display: flex;
+	background-image: url("asstes/illustrations/404-MilkyWay.svg");
+	background-size: contain;
+	display: flex !important;
 	flex-direction: column;
 	width: 70%;
 	margin: 0 auto;
 	align-items: center;
+	background-color: #122131 !important;
 }
 
-.error-page-inside .button {
-	margin: 0 auto !important;
+.error-page-inside * {
+	margin: 3rem auto !important;
 }
+

@@ -1,19 +1,17 @@
-.. rst-class:: error-page
+.. container:: error-page-inside centered section
 
-	.. container:: error-page-inside centered
+	.. rst-class:: error-page-img
+	.. image:: assets/midimonster-logo.svg	
 
-		.. rst-class:: error-page-img
-		.. image:: assets/midimonster-logo.svg	
+	***
+	404
+	***
 
-		***
-		404
-		***
+	There was a problem serving your request
+	########################################
 
-		There was a problem serving your request
-		########################################
+	We were unable to find the content for the current URL. It is possible that the link that sent you here has some characters missing.
 
-		We were unable to find the content for the current URL. It is possible that the link that sent you here has some characters missing.
-
-		.. rst-class:: button primary
-		`Back to homepage </index.html>`_
+	.. rst-class:: button primary
+	`Back to homepage </index.html>`_
 
