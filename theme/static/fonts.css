@@ -52,7 +52,7 @@ a {
     color: #fff;
 }
 
-h1{
+h1, p.h1{
     font-family: "GangsterGrotesk Regular";
     font-weight: bold;
     font-size: 3.2rem; /* 48px */

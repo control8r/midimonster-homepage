@@ -2149,7 +2149,7 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 /*   404 - Error page   */
 /* ==================== */
 .error-page-img {
-	width: 40%;
+	width: 30%;
 }
 
 .error-page-inside {
@@ -2157,13 +2157,19 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 	background-size: contain;
 	display: flex !important;
 	flex-direction: column;
-	width: 70%;
-	margin: 0 auto;
+	top: 0 !important;
+	margin: 0 auto !important;
+	padding: 0 !important;
 	align-items: center;
 	background-color: #122131 !important;
 }
 
 .error-page-inside * {
-	margin: 3rem auto !important;
+	margin: 0.5rem auto !important;
+}
+
+.error-page-inside p.h1 {
+	margin: 2rem auto !important;
+	font-size: 5rem;
 }
 
