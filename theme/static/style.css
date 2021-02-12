@@ -2168,8 +2168,15 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 	margin: 0.5rem auto !important;
 }
 
-.error-page-inside p.h1 {
-	margin: 2rem auto !important;
-	font-size: 5rem;
+.error-page-inside h1 {
+	display: none;
+}
+
+header + .error-page-inside {
+	top: 100px !important;
+}
+
+.error-page-inside:last-child {
+	padding-bottom: 80px !important;
 }
 
