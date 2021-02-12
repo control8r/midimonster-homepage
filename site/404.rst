@@ -1,7 +1,5 @@
 .. container:: error-page
 
-	.. rst-class:: hero-img
-	.. image:: assets/illustrations/404-MilkyWay.svg
 
 	404
 	***
