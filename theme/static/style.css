@@ -863,7 +863,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 ====== HEADER/FOOTER ======
 =====================*/
 header {
-  padding: 1rem 5%;
+  padding: 0.5rem 5%;
   background: #1d3247;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   justify-content: space-between;
@@ -1406,6 +1406,11 @@ ul li p {
 		padding:0;
 }
 
+.modules .module-buttons a{
+	margin: 0;
+    padding: 1rem 0;
+  }
+
 
 @media (min-width: 640px) {
 
@@ -1421,6 +1426,26 @@ ul li p {
 	min-height: 100px;
 	position: relative;
 	justify-content: space-between;
+  }
+
+  .modules .module-buttons a{
+    padding: 0.2rem;
+  }
+
+  .modules .module-buttons .button::before{
+    content: '';
+	position: relative;
+	bottom: 0;
+	left: -2px;
+	right: 0;
+	width:0;
+	height:0;
+	margin: 0 auto;
+	z-index: 100;
+	border-right: 2px solid rgba(35, 203, 151, 0.25);
+  }
+  .modules .module-buttons .button:first-child::before{
+    display: none;
   }
 
 
