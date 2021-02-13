@@ -233,6 +233,10 @@ header li.active a{
     font-weight:600;
 }
 
+a[href*="http"] {
+  white-space: nowrap;
+}
+
 a[href*="http"]::after {
 	content: '';
     display: inline-block;
