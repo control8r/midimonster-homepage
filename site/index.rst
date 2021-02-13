@@ -121,7 +121,7 @@ on how you can help in developing, promoting and growing this open source projec
 
 
 
-.. rst-class:: flying-news-block
+.. rst-class:: flying-news-block hidden
 New release
 ################
 

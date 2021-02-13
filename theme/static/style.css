@@ -2182,3 +2182,10 @@ header + .error-page-inside {
 	padding-bottom: 80px !important;
 }
 
+
+/* ==================== */
+/*      Allgemein      */
+/* ==================== */
+.hidden {
+	display: none !important;
+}
