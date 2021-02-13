@@ -191,18 +191,19 @@ footer {
     margin: 1rem auto;
 }
 
-
-
-ul.simple{
-	text-align: left;
-}
-
 ul.simple li{
 	width: 80%;
 	max-width:80%;
-	margin: 0 auto;
+	margin: 0.5rem auto;
 
 }
+
+ul.simple{
+	text-align: left;
+	width: 100%;
+	max-width: 100%;
+}
+
 ul.simple li::before{
 	left: -1rem !important;
 	
