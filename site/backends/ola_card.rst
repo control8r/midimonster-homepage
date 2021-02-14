@@ -1,4 +1,4 @@
-.. container:: module-card
+.. container:: module-card read-more-target
 
 	.. raw:: html
 

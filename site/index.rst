@@ -40,7 +40,11 @@ Wide range of supported protocols
 Mix and match the protocols relevant to your use-case, and translate seamlessly
 between them. Almost all protocols can be used both for control input as well as output.
 
-.. container:: modules
+.. raw:: html
+
+		<input type="checkbox" class="read-more-state" id="more-modules" />
+
+.. container:: modules read-more-wrap
 
 	.. include:: backends/midi_card.rst
 	.. include:: backends/artnet_card.rst
@@ -53,6 +57,11 @@ between them. Almost all protocols can be used both for control input as well as
 	.. include:: backends/input_card.rst
 	.. include:: backends/visca_card.rst
 	.. include:: backends/jack_card.rst
+
+.. raw:: html
+
+		<label for="more-modules" class="read-more-trigger button secondary" id="more-modules-button"></label>
+
 
 .. rst-class:: centered
 Powerful programming environment included

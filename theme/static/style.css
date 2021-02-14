@@ -1317,7 +1317,7 @@ ul li p {
   margin-top: 1rem;
 }
 
-.button a{
+.button a, label.button{
   letter-spacing: 0.05rem;
   padding: 0.5rem 2rem;
   border-radius: 2rem;
@@ -1333,7 +1333,7 @@ ul li p {
   background: #23cb97;
 }
 
-.button.secondary a {
+.button.secondary a, label.button.secondary {
   color: #fff ;
   border: 2px solid #23cb97;
 }
@@ -1387,9 +1387,11 @@ ul li p {
   justify-content: space-evenly;
 }
 
+/*
 .modules .module-card:nth-of-type(1n+5){ 
   display: none; 
 }
+*/
 .modules .module-card {
 	width:100%;
 	display: grid;
@@ -2186,6 +2188,9 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 }
 
 
+/* ==================== */
+/*   TOGGLE READ MORE   */
+/* ==================== */
 
 .flying-news-block {
 	display: flex !important;
@@ -2218,6 +2223,39 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 	white-space: nowrap;
 }
 
+
+.read-more-state {
+	display: none;
+  }
+  
+  .read-more-target {
+	opacity: 0;
+	max-height: 0;
+	font-size: 0;
+	transition: .25s ease;
+	display: none !important;
+  }
+  
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+	opacity: 1;
+	font-size: inherit;
+	max-height: 999em;
+	display: grid !important;
+  }
+  
+  .read-more-state ~ .read-more-trigger:before {
+	content: 'Show more';
+  }
+  
+  .read-more-state:checked ~ .read-more-trigger:before {
+	content: 'Show less';
+  }
+  
+  .read-more-trigger {
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 2rem !important;
+  }
 
 
 

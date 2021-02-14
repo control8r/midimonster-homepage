@@ -1,4 +1,4 @@
-.. container:: flex flex-vertical module-card
+.. container:: flex flex-vertical module-card read-more-target
 
 	.. raw:: html
 
