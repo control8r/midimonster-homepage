@@ -27,6 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	}
 
+	document.querySelectorAll('a[href*="http"]').forEach(function(link) {
+		link.target = '_blank';
+	  });
+
   });
 
 function clearAnimations(classN) {
