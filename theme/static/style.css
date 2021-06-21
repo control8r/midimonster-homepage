@@ -191,18 +191,19 @@ footer {
     margin: 1rem auto;
 }
 
-
-
-ul.simple{
-	text-align: left;
-}
-
 ul.simple li{
 	width: 80%;
 	max-width:80%;
-	margin: 0 auto;
+	margin: 0.5rem auto;
 
 }
+
+ul.simple{
+	text-align: left;
+	width: 100%;
+	max-width: 100%;
+}
+
 ul.simple li::before{
 	left: -1rem !important;
 	
@@ -862,7 +863,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 ====== HEADER/FOOTER ======
 =====================*/
 header {
-  padding: 1rem 5%;
+  padding: 0.5rem 5%;
   background: #1d3247;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   justify-content: space-between;
@@ -1316,7 +1317,7 @@ ul li p {
   margin-top: 1rem;
 }
 
-.button a{
+.button a, label.button{
   letter-spacing: 0.05rem;
   padding: 0.5rem 2rem;
   border-radius: 2rem;
@@ -1332,7 +1333,7 @@ ul li p {
   background: #23cb97;
 }
 
-.button.secondary a {
+.button.secondary a, label.button.secondary {
   color: #fff ;
   border: 2px solid #23cb97;
 }
@@ -1386,9 +1387,11 @@ ul li p {
   justify-content: space-evenly;
 }
 
+/*
 .modules .module-card:nth-of-type(1n+5){ 
   display: none; 
 }
+*/
 .modules .module-card {
 	width:100%;
 	display: grid;
@@ -1405,6 +1408,11 @@ ul li p {
 		padding:0;
 }
 
+.modules .module-buttons a{
+	margin: 0;
+    padding: 1rem 0;
+  }
+
 
 @media (min-width: 640px) {
 
@@ -1420,6 +1428,26 @@ ul li p {
 	min-height: 100px;
 	position: relative;
 	justify-content: space-between;
+  }
+
+  .modules .module-buttons a{
+    padding: 0.2rem;
+  }
+
+  .modules .module-buttons .button::before{
+    content: '';
+	position: relative;
+	bottom: 0;
+	left: -2px;
+	right: 0;
+	width:0;
+	height:0;
+	margin: 0 auto;
+	z-index: 100;
+	border-right: 2px solid rgba(35, 203, 151, 0.25);
+  }
+  .modules .module-buttons .button:first-child::before{
+    display: none;
   }
 
 
@@ -1863,6 +1891,44 @@ table th p {
 }
 
 
+/* ==================== */
+/*   404 - Error page   */
+/* ==================== */
+.error-page-img {
+	width: 30%;
+	background-color:#122131;
+}
+.error-page-inside {
+	display: flex !important;
+	flex-direction: column;
+	top: 0 !important;
+	margin: 0 auto !important;
+	padding: 0 !important;
+	align-items: center;
+	background-color: #122131 !important;
+}
+
+.error-page-inside * {
+	margin: 0.5rem auto !important;
+}
+
+.error-page-inside h1 {
+	display: none;
+}
+
+header + .error-page-inside {
+	top: 100px !important;
+	background-image: url(icons/404-milkyway.svg);
+	background-size: 90%;
+    background-repeat: repeat-x;
+
+}
+
+.error-page-inside:last-child {
+	padding-bottom: 80px !important;
+}
+
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 700px),
@@ -2055,7 +2121,58 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 		width:70%;
 	}
 
+	/* 404.RST  */
 
+	.error-page-img {
+		width: 50%;
+		background-color:#122131;
+	}
+	.error-page-inside:last-child {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+
+	/* mobile module collapse  */
+
+	.read-more-state {
+		display: none;
+	}
+	
+	.read-more-target {
+		opacity: 0;
+		max-height: 0;
+		font-size: 0;
+		transition: .25s ease;
+		display: none !important;
+	}
+	
+	.read-more-state:checked ~ .read-more-wrap .read-more-target {
+		opacity: 1;
+		font-size: inherit;
+		max-height: 999em;
+		display: grid !important;
+	}
+	
+	.read-more-state ~ .read-more-trigger:before {
+		content: 'Show more';
+	}
+	
+	.read-more-state:checked ~ .read-more-trigger:before {
+		content: 'Show less';
+	}
+	
+	.read-more-trigger.button {
+		cursor: pointer;
+		display: inline-block !important;
+		margin-top: 2rem !important;
+	}
+
+
+}
+
+.read-more-trigger.button {
+	display: none;
 }
 
 .no-animation {
@@ -2112,6 +2229,9 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 }
 
 
+/* ==================== */
+/*   TOGGLE READ MORE   */
+/* ==================== */
 
 .flying-news-block {
 	display: flex !important;
@@ -2142,4 +2262,14 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 700px) 
 	padding: 0.2rem 1rem !important;
 	margin: 0.5rem !important;
 	white-space: nowrap;
+}
+
+
+
+
+/* ==================== */
+/*      Allgemein      */
+/* ==================== */
+.hidden {
+	display: none !important;
 }

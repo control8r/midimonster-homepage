@@ -10,6 +10,27 @@ document.addEventListener("DOMContentLoaded", () => {
 		updateUsageBlock(usageExamplesElementAnimation, usageExamplesElementAnimationHTML);
 	});
 
+	var moreModulesButton = document.getElementById("more-modules-button");
+	var moreModulesInput = document.getElementById("more-modules");
+	var modulesContainer = document.getElementById("wide-range-of-supported-protocols");
+	moreModulesButton.onclick = function changeContent() {
+		if (moreModulesInput.checked) {
+			window.scroll({
+				top: modulesContainer.offsetTop+window.innerHeight/2,
+				behavior: 'smooth'
+			});
+		} else {
+			window.scroll({
+				top: window.pageYOffset+150,
+				behavior: 'smooth'
+			})
+		}
+	}
+
+	document.querySelectorAll('a[href*="http"]').forEach(function(link) {
+		link.target = '_blank';
+	  });
+
   });
 
 function clearAnimations(classN) {
@@ -80,3 +101,4 @@ function closeNavigation() {
 document.getElementsByClassName("navbar").item(0).style.width = "0";
 document.getElementsByClassName("getStarted-content").item(0).style.marginLeft = "0";
 }
+
