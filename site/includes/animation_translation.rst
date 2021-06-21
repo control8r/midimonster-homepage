@@ -17,6 +17,7 @@
 			* ArtNet
 			* OSC applications
 			* Video switchers
+			* Robots
 			* DMX
 			* Stage lighting
 			* MIDI synthesizers
@@ -33,6 +34,7 @@
 			* JACK LV2 Plugins
 			* OLA
 			* Stage automation
+			* Your smarthome
 			* Mixers
 
 		.. raw:: html
@@ -69,6 +71,9 @@
 			* JACK LV2 Plugins
 			* Python scripting
 			* Automated sequencing
+			* Temperature sensors
+			* Light switches
+			* Your smarthome
 
 		.. raw:: html
 
