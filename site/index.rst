@@ -32,7 +32,7 @@ The power of the MIDIMonster can be used to
 	- Visualize control data of any supported protocol using any other protocol
 	- Use OSC controller apps on your phone or tablet to run your show
 	- Play games using a lighting console
-	- Use your smart home sensor to control LED strips
+	- Use your smart home sensors to control LED strips
 
 .. rst-class:: centered
 Wide range of supported protocols
