@@ -10,7 +10,7 @@
 		Linux / OS X / Windows
 
 		.. rst-class:: description
-		Lighweight message queuing protocol, widely used in smart home and infrastrucure applications
+		Lightweight message queuing protocol, widely used in smart home and infrastrucure applications
 
 	.. container:: module-buttons
 
