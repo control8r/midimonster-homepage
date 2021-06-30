@@ -5,27 +5,28 @@ Download
 Get the latest binary release builds here or try our `Linux installer <#using-the-linux-installer>`_.
 Of course, you can always `build the source yourself <https://github.com/cbdevnet/midimonster#building-from-source>`_.
 
-MIDIMonster v0.5
+MIDIMonster v0.6
 ################
 
 .. container:: release
 	Release info
 
-	- **rtpmidi:** New RTP MIDI backend, which allows users to interact with a wide variety of devices communicating MIDI over the network.
-	- **midi:** The ALSA MIDI backend has removed support for the deprecated early channel specification syntax.
-	- **osc:** The OSC backend has been extended to allow reception of OSC bundle data.
-	- **maweb:** The maweb backend now supports specifying multiple fallback remote addresses and will periodically try to reconnect to any of them when a connection fails.
-	- **lua:** The Lua backend now supports routing all channel events to a single function using the default-handler functionality...
+	- **core:** Configuration parser now supports list-type multichannel specification
+	- **wininput:** (New backend) Supports using mouse, keyboard and joysticks as inputs on Windows
+	- **visca:** (New backend) Provides control of motorized PTZ cameras over the network
+	- **mqtt:** (New backend) Provides input from and output to an MQTT broker
+	- **lua/python:**: New channel introspection feature
+	- **midi backends:** Support for NRPN/RPN extended controls
 
 	.. rst-class:: inline-link
-	`Read more on the GitHub release page <https://github.com/cbdevnet/midimonster/releases/tag/v0.5>`_
+	`Read more on the GitHub release page <https://github.com/cbdevnet/midimonster/releases/tag/v0.6>`_
 
 	.. rst-class:: download-boxes no-dots
-	- Debian Linux (amd64) *.deb* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster_0.5-1_amd64.deb>`_
-	- Linux (x64 ELF) *.tgz* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster-v0.5-linux.tgz>`_
-	- OS X (Mach-O) *.tgz* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster-v0.5-osx.tgz>`_
-	- Windows (x64 PE) *.zip* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.5/midimonster-v0.5-windows.zip>`_
-	- Source code *.tar.gz* `Download <https://github.com/cbdevnet/midimonster/archive/v0.5.tar.gz>`_
+	- Debian Linux (amd64) *.deb* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.6/midimonster_0.6-1_amd64.deb>`_
+	- Linux (x64 ELF) *.tgz* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.6/midimonster-v0.6-linux.tgz>`_
+	- OS X (Mach-O) *.tgz* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.6/midimonster-v0.6-osx.tgz>`_
+	- Windows (x64 PE) *.zip* `Download <https://github.com/cbdevnet/midimonster/releases/download/v0.6/midimonster-v0.6-windows.zip>`_
+	- Source code *.tar.gz* `Download <https://github.com/cbdevnet/midimonster/archive/v0.6.tar.gz>`_
 
 	.. container:: buttons
 
