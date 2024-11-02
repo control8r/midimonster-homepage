@@ -136,6 +136,6 @@ on how you can help in developing, promoting and growing this open source projec
 New release
 ################
 
-In new release we fixed a number of significant issues. 
+In the new release we fixed a number of significant issues. 
 
 `More <https://webirc.hackint.org/#irc://irc.hackint.org/#midimonster>`_
